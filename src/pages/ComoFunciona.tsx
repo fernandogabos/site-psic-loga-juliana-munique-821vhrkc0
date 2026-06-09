@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO } from '@/components/SEO'
-import { Calendar, MessageSquare, Clock, Laptop } from 'lucide-react'
+import { Calendar, MessageSquare, Clock, Laptop, ArrowRight } from 'lucide-react'
 
 export default function ComoFunciona() {
   const steps = [
