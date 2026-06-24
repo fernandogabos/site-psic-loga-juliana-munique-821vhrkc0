@@ -19,21 +19,24 @@ export default function Index() {
         schema={[baseLocalBusinessSchema, basePersonSchema]}
       />
 
-      <section className="relative overflow-hidden bg-background py-20 lg:py-32">
-        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-30 hidden lg:block pointer-events-none">
-          <div className="w-[600px] h-[600px] rounded-full bg-secondary blur-[100px]" />
+      <section
+        className="relative overflow-hidden py-20 lg:py-32"
+        style={{ backgroundColor: '#8a674e' }}
+      >
+        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-20 hidden lg:block pointer-events-none">
+          <div className="w-[600px] h-[600px] rounded-full bg-[#F7F3EF] blur-[100px]" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="max-w-2xl animate-fade-in-up">
-              <span className="inline-block py-1 px-3 rounded-full bg-muted text-primary text-sm font-semibold tracking-wide mb-6">
+              <span className="inline-block py-1 px-3 rounded-full bg-[#3E322B] text-[#F7F3EF] text-sm font-semibold tracking-wide mb-6">
                 Atendimento Presencial em Jundiaí e Online
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#FFFFFF] leading-tight mb-6">
                 Um espaço seguro para compreender sua história e construir novos caminhos.
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
+              <p className="text-lg md:text-xl text-[#F7F3EF] mb-8 max-w-lg leading-relaxed opacity-90">
                 Psicoterapia psicanalítica especializada para adolescentes e adultos. Reconecte-se
                 com sua essência e encontre sentido em meio aos desafios.
               </p>
@@ -41,7 +44,7 @@ export default function Index() {
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-full text-base min-h-[56px] h-14 px-8 bg-primary hover:bg-primary/90 shadow-md transition-transform hover:-translate-y-1 focus-visible:ring-offset-2"
+                  className="rounded-full text-base min-h-[56px] h-14 px-8 bg-[#3E322B] text-[#FFFFFF] hover:bg-[#3E322B]/90 shadow-md transition-transform hover:-translate-y-1 focus-visible:ring-offset-[#8a674e] border-none"
                 >
                   <Link to="/contato">Agendar Conversa</Link>
                 </Button>
@@ -49,27 +52,32 @@ export default function Index() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="rounded-full text-base min-h-[56px] h-14 px-8 border-primary text-primary hover:bg-primary/5 transition-colors focus-visible:ring-offset-2"
+                  className="rounded-full text-base min-h-[56px] h-14 px-8 border-[#F7F3EF] text-[#FFFFFF] hover:bg-[#F7F3EF]/10 transition-colors focus-visible:ring-offset-[#8a674e] bg-transparent"
                 >
                   <Link to="/sobre">Conheça Meu Trabalho</Link>
                 </Button>
               </div>
             </div>
             <div className="relative animate-fade-in lg:ml-auto">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] max-w-md mx-auto lg:mx-0 border-4 border-white">
+              <div className="relative rounded-full overflow-hidden shadow-2xl aspect-square max-w-[400px] mx-auto lg:mx-0 border-8 border-[#D7C2AE]/30">
                 <img
-                  src="https://img.usecurling.com/ppl/large?gender=female&seed=juliana"
-                  alt="Retrato da Psicóloga Juliana Munique em fundo neutro"
+                  src="/juliana-munique.jpg"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null
+                    e.currentTarget.src =
+                      'https://img.usecurling.com/ppl/large?gender=female&seed=juliana'
+                  }}
+                  alt="Retrato da Psicóloga Juliana Munique"
                   className="object-cover w-full h-full"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs animate-float hidden md:flex items-center gap-4">
-                <div className="bg-secondary p-3 rounded-full text-primary" aria-hidden="true">
+              <div className="absolute -bottom-6 -left-6 bg-[#F7F3EF] p-6 rounded-2xl shadow-xl max-w-xs animate-float hidden md:flex items-center gap-4">
+                <div className="bg-[#D7C2AE] p-3 rounded-full text-[#3E322B]" aria-hidden="true">
                   <Sparkles className="h-6 w-6" />
                 </div>
                 <div>
-                  <p className="font-semibold text-primary">Experiência</p>
-                  <p className="text-sm text-muted-foreground">Na clínica desde 2011</p>
+                  <p className="font-semibold text-[#3E322B]">Experiência</p>
+                  <p className="text-sm text-[#6D5647]">Na clínica desde 2011</p>
                 </div>
               </div>
             </div>
