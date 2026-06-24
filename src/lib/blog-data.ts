@@ -1,3 +1,6 @@
+export const AUTHOR_PORTRAIT_URL =
+  '/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-03-dcaf73cb.png'
+
 export interface BlogPost {
   slug: string
   title: string

@@ -1,7 +1,7 @@
 import { useParams, Navigate, Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, basePersonSchema } from '@/components/SEO'
-import { blogPosts } from '@/lib/blog-data'
+import { blogPosts, AUTHOR_PORTRAIT_URL } from '@/lib/blog-data'
 import { ArrowLeft } from 'lucide-react'
 
 export default function BlogPost() {
@@ -84,9 +84,9 @@ export default function BlogPost() {
         <div className="mt-20 pt-10 border-t border-border flex items-center gap-6">
           <div className="w-16 h-16 rounded-full overflow-hidden shrink-0">
             <img
-              src="https://img.usecurling.com/ppl/thumbnail?gender=female&seed=juliana2"
+              src={AUTHOR_PORTRAIT_URL}
               alt="Retrato da Psicóloga Juliana Munique"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div>
