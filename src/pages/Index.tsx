@@ -56,18 +56,16 @@ export default function Index() {
               </div>
             </div>
             <div className="relative animate-fade-in lg:ml-auto w-full h-full pb-16 lg:pb-0">
-              <div className="relative rounded-full lg:rounded-[2rem] overflow-hidden shadow-2xl aspect-square lg:aspect-auto w-full h-full max-h-[400px] lg:max-h-none max-w-[400px] lg:max-w-[500px] mx-auto lg:ml-auto lg:mr-0 border-8 border-[#D7C2AE]/30">
-                <img
-                  src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-01-9caf7256.png"
-                  onError={(e) => {
-                    e.currentTarget.onerror = null
-                    e.currentTarget.src =
-                      'https://img.usecurling.com/ppl/large?gender=female&seed=juliana'
-                  }}
-                  alt="Foto profissional de Juliana Munique"
-                  className="object-cover w-full h-full object-center"
-                />
-              </div>
+              <img
+                src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-01-9caf7256.png"
+                onError={(e) => {
+                  e.currentTarget.onerror = null
+                  e.currentTarget.src =
+                    'https://img.usecurling.com/ppl/large?gender=female&seed=juliana'
+                }}
+                alt="Foto profissional de Juliana Munique"
+                className="object-cover w-full h-full object-center shadow-2xl aspect-square lg:aspect-auto max-h-[400px] lg:max-h-none max-w-[400px] lg:max-w-[500px] mx-auto lg:ml-auto lg:mr-0"
+              />
               <div className="absolute bottom-8 left-4 lg:bottom-24 lg:-left-8 bg-[#F7F3EF] p-6 rounded-2xl shadow-xl max-w-xs animate-float hidden md:flex items-center gap-4 z-20">
                 <div className="bg-[#D7C2AE] p-3 rounded-full text-[#3E322B]" aria-hidden="true">
                   <Sparkles className="h-6 w-6" />
