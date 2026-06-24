@@ -216,48 +216,46 @@ export default function Index() {
 
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="bg-card rounded-[3rem] overflow-hidden shadow-lg border border-border">
-            <div className="grid lg:grid-cols-2">
-              <div className="p-10 md:p-16 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 text-primary font-semibold tracking-wider uppercase text-xs mb-4">
-                  <MapPin className="h-4 w-4" aria-hidden="true" />
-                  Localização Privilegiada
-                </div>
-                <h2 className="text-3xl font-serif font-bold text-primary mb-6">
-                  Psicóloga em Jundiaí (Vila Arens)
-                </h2>
-                <div className="space-y-4 text-foreground leading-relaxed">
-                  <p>
-                    Meu consultório está localizado na <strong>Vila Arens</strong>, um bairro de
-                    fácil acesso em <strong>Jundiaí - SP</strong>, oferecendo um ambiente seguro,
-                    acolhedor e sigiloso para os atendimentos presenciais.
-                  </p>
-                  <p>
-                    A sala foi cuidadosamente planejada para proporcionar tranquilidade, longe do
-                    ruído da cidade, favorecendo o trabalho de escuta analítica e a entrega do
-                    paciente.
-                  </p>
-                  <p>
-                    Para quem não reside na região ou prefere a comodidade de casa, ofereço também o
-                    formato de <strong>atendimento online</strong> para todo o Brasil.
-                  </p>
-                </div>
-                <div className="mt-8">
-                  <Button
-                    asChild
-                    className="rounded-full min-h-[44px] bg-primary hover:bg-primary/90 h-12 px-8 focus-visible:ring-offset-2"
-                  >
-                    <Link to="/contato">Agendar Horário</Link>
-                  </Button>
-                </div>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex flex-col justify-center max-w-xl mx-auto lg:mx-0">
+              <div className="inline-flex items-center gap-2 text-primary font-semibold tracking-wider uppercase text-xs mb-4">
+                <MapPin className="h-4 w-4" aria-hidden="true" />
+                Localização Privilegiada
               </div>
-              <div className="bg-secondary relative min-h-[400px] lg:min-h-full">
-                <img
-                  src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-02-7c63aa80.png"
-                  alt="Interior acolhedor do consultório de psicologia na Vila Arens, Jundiaí"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
+                Psicóloga em Jundiaí (Vila Arens)
+              </h2>
+              <div className="space-y-4 text-foreground leading-relaxed text-lg">
+                <p>
+                  Meu consultório está localizado na <strong>Vila Arens</strong>, um bairro de fácil
+                  acesso em <strong>Jundiaí - SP</strong>, oferecendo um ambiente seguro, acolhedor
+                  e sigiloso para os atendimentos presenciais.
+                </p>
+                <p>
+                  A sala foi cuidadosamente planejada para proporcionar tranquilidade, longe do
+                  ruído da cidade, favorecendo o trabalho de escuta analítica e a entrega do
+                  paciente.
+                </p>
+                <p>
+                  Para quem não reside na região ou prefere a comodidade de casa, ofereço também o
+                  formato de <strong>atendimento online</strong> para todo o Brasil.
+                </p>
               </div>
+              <div className="mt-8">
+                <Button
+                  asChild
+                  className="rounded-full min-h-[44px] bg-primary hover:bg-primary/90 h-12 px-8 focus-visible:ring-offset-2"
+                >
+                  <Link to="/contato">Agendar Horário</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl min-h-[400px] lg:min-h-[500px] w-full bg-secondary">
+              <img
+                src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-02-7c63aa80.png"
+                alt="Interior acolhedor do consultório de psicologia na Vila Arens, Jundiaí"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
