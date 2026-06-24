@@ -58,7 +58,7 @@ export default function Index() {
             <div className="relative animate-fade-in lg:ml-auto w-full h-full pb-16 lg:pb-0">
               <div className="relative rounded-full lg:rounded-[2rem] overflow-hidden shadow-2xl aspect-square lg:aspect-auto w-full h-full max-h-[400px] lg:max-h-none max-w-[400px] lg:max-w-[500px] mx-auto lg:ml-auto lg:mr-0 border-8 border-[#D7C2AE]/30">
                 <img
-                  src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-01-a0a1ed89.png"
+                  src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-01-9caf7256.png"
                   onError={(e) => {
                     e.currentTarget.onerror = null
                     e.currentTarget.src =
