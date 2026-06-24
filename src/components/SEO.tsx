@@ -60,6 +60,7 @@ export function SEO({
       'og:type': ogType,
       'og:url': currentUrl,
       'og:image': finalImage,
+      'og:locale': 'pt_BR',
       'twitter:card': 'summary_large_image',
       'twitter:title': finalTitle,
       'twitter:description': description,
