@@ -253,7 +253,7 @@ export default function Index() {
               </div>
               <div className="bg-secondary relative min-h-[400px] lg:min-h-full">
                 <img
-                  src="https://img.usecurling.com/p/800/800?q=therapy%20office&color=brown"
+                  src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-02-7c63aa80.png"
                   alt="Interior acolhedor do consultório de psicologia na Vila Arens, Jundiaí"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
