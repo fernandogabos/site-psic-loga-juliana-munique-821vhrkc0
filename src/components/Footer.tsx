@@ -88,14 +88,18 @@ export function Footer() {
             <h4 className="font-serif font-bold text-lg text-primary-foreground">Conecte-se</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/julianamunique"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/julianamunique"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
                 aria-label="LinkedIn"
               >

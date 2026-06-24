@@ -27,13 +27,43 @@ export default function ComoFunciona() {
     },
   ]
 
+  const faqSchema = {
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Quanto tempo dura uma psicoterapia?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A psicanálise não possui um prazo de validade predefinido. O tempo de duração varia de acordo com as necessidades, o ritmo de elaboração e os objetivos de cada paciente. É um processo artesanal, focado na estrutura profunda do indivíduo, não apenas na supressão imediata de sintomas.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'A terapia online tem o mesmo resultado?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Sim. A eficácia da psicanálise baseia-se na fala e na escuta, o que se sustenta perfeitamente no ambiente virtual. O fundamental é que, no momento da sessão, você esteja em um lugar onde se sinta à vontade para falar sem interrupções ou receio de ser ouvido por terceiros.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Atende convênios médicos?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Meus atendimentos são exclusivamente particulares, visando garantir a total privacidade, qualidade de tempo e personalização que a clínica psicanalítica exige. No entanto, forneço recibos para que você solicite o reembolso integral ou parcial junto ao seu plano de saúde.',
+        },
+      },
+    ],
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title="Como Funciona a Terapia | Psicóloga em Jundiaí e Online"
         description="Entenda como funciona a psicoterapia presencial com psicóloga em Jundiaí ou no formato psicóloga online. Duração, modalidade e primeiras sessões."
         canonicalUrl="/como-funciona"
-        schema={baseLocalBusinessSchema}
+        schema={[baseLocalBusinessSchema, faqSchema]}
       />
 
       <div className="bg-muted pt-8 pb-16">

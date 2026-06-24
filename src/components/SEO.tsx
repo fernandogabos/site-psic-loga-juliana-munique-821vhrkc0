@@ -9,6 +9,10 @@ export const basePersonSchema = {
   jobTitle: 'Psicóloga clínica especialista em psicanálise em Jundiaí',
   url: BASE_URL,
   identifier: 'CRP 06/106345',
+  sameAs: [
+    'https://www.instagram.com/julianamunique',
+    'https://www.linkedin.com/in/julianamunique',
+  ],
 }
 
 export const baseLocalBusinessSchema = {
@@ -24,6 +28,10 @@ export const baseLocalBusinessSchema = {
     addressRegion: 'SP',
     addressCountry: 'BR',
   },
+  sameAs: [
+    'https://www.instagram.com/julianamunique',
+    'https://www.linkedin.com/in/julianamunique',
+  ],
 }
 
 interface SEOProps {
