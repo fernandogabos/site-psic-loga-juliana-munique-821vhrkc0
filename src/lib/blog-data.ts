@@ -187,8 +187,8 @@ export const blogPosts: BlogPost[] = [
     title: 'Carência afetiva, o que é e como ela afeta seus relacionamentos',
     excerpt:
       'Entenda a origem da carência emocional, seus impactos nocivos nos relacionamentos amorosos e como a psicoterapia atua na construção da autonomia afetiva.',
-    date: '15 de Agosto, 2026',
-    dateIso: '2026-08-15T08:00:00Z',
+    date: '15 de Março, 2026',
+    dateIso: '2026-03-15T08:00:00Z',
     category: 'Relacionamentos',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=couple&color=brown',
     faqs: [
@@ -255,8 +255,8 @@ export const blogPosts: BlogPost[] = [
     title: 'Bloqueios emocionais, como identificá-los e tratá-los',
     excerpt:
       'Aprenda a reconhecer os bloqueios e defesas silenciosas do inconsciente que sabotam suas escolhas e como a terapia auxilia no desbloqueio.',
-    date: '28 de Julho, 2026',
-    dateIso: '2026-07-28T08:00:00Z',
+    date: '28 de Fevereiro, 2026',
+    dateIso: '2026-02-28T08:00:00Z',
     category: 'Saúde Mental',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=mind&color=brown',
     faqs: [
@@ -325,8 +325,8 @@ export const blogPosts: BlogPost[] = [
     title: 'Por que educar é tão difícil, cinco pontos essenciais para pais',
     excerpt:
       'Reflexões valiosas sobre os enormes desafios da parentalidade moderna, a repetição inconsciente de padrões herdados e os cinco pilares para o desenvolvimento infantil.',
-    date: '12 de Setembro, 2026',
-    dateIso: '2026-09-12T08:00:00Z',
+    date: '12 de Janeiro, 2026',
+    dateIso: '2026-01-12T08:00:00Z',
     category: 'Parentalidade',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=family&color=brown',
     faqs: [
