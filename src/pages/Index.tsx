@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { SEO, baseLocalBusinessSchema, basePersonSchema } from '@/components/SEO'
+import { TestimonialsSection } from '@/components/Testimonials'
 
 export default function Index() {
   return (
@@ -155,6 +156,8 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection className="bg-muted" />
 
       <section className="py-24 bg-primary text-primary-foreground rounded-t-[3rem]">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">

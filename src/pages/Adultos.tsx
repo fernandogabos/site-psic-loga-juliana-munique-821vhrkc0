@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
 import { Button } from '@/components/ui/button'
+import { TestimonialCard } from '@/components/Testimonials'
 
 export default function Adultos() {
   return (
@@ -70,6 +71,24 @@ export default function Adultos() {
             consegue ouvir sobre si mesmo. Esse processo permite desamarrar os nós que paralisam a
             vida, abrindo espaço para escolhas mais autênticas e conscientes.
           </p>
+        </div>
+
+        <div className="mb-16">
+          <h2 className="text-3xl font-serif font-bold mb-8 text-center text-primary">
+            Experiências de quem já iniciou a terapia
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <TestimonialCard
+              name="Fernando Gabos"
+              rating={5}
+              text="Excelente psicóloga! A Juliana Munique conduz os atendimentos com muita empatia, profissionalismo e sensibilidade. Faz toda a diferença contar com uma profissional tão comprometida com o bem-estar e a evolução de seus pacientes. Recomendo com total confiança."
+            />
+            <TestimonialCard
+              name="André Rossi"
+              rating={5}
+              text="Juliana é uma profissional muito competente, dedicada e atenciosa, além de muito simpática. Super recomendada!"
+            />
+          </div>
         </div>
 
         <div className="bg-primary text-primary-foreground p-10 md:p-14 rounded-[3rem] text-center shadow-xl">

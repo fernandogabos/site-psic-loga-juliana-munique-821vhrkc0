@@ -1,6 +1,7 @@
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
 import { MapPin, Phone, Clock } from 'lucide-react'
+import { TestimonialCard } from '@/components/Testimonials'
 
 export default function Contato() {
   return (
@@ -59,7 +60,17 @@ export default function Contato() {
               <Phone className="h-8 w-8 text-primary" />
             </div>
             <h3 className="font-bold text-xl text-primary mb-3">WhatsApp / Telefone</h3>
-            <p className="text-muted-foreground text-lg mb-4">(11) 99570-3646</p>
+            <p className="text-muted-foreground text-lg mb-6">(11) 99570-3646</p>
+
+            <div className="w-full text-left mb-6">
+              <TestimonialCard
+                name="André Rossi"
+                rating={5}
+                text="Juliana é uma profissional muito competente, dedicada e atenciosa, além de muito simpática. Super recomendada!"
+                compact={true}
+              />
+            </div>
+
             <a
               href="https://wa.me/message/KCOHOGJC7PANP1"
               target="_blank"
