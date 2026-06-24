@@ -29,7 +29,7 @@ export default function Sobre() {
             <div className="sticky top-32">
               <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[3/4] border-8 border-white">
                 <img
-                  src="https://img.usecurling.com/ppl/large?gender=female&seed=juliana2"
+                  src="/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-03-dcaf73cb.png"
                   alt="Retrato da Psicóloga Juliana Munique"
                   className="w-full h-full object-cover"
                 />
