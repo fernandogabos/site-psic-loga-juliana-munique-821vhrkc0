@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
 import { Calendar, MessageSquare, Clock, Laptop, ArrowRight } from 'lucide-react'
 
 export default function ComoFunciona() {
@@ -30,8 +30,10 @@ export default function ComoFunciona() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Como Funciona a Terapia Psicanalítica"
-        description="Entenda o passo a passo de como iniciar a psicoterapia, duração, sessões e formato online ou presencial em Jundiaí."
+        title="Como Funciona a Terapia | Psicóloga em Jundiaí e Online"
+        description="Entenda como funciona a psicoterapia presencial com psicóloga em Jundiaí ou no formato psicóloga online. Duração, modalidade e primeiras sessões."
+        canonicalUrl="/como-funciona"
+        schema={baseLocalBusinessSchema}
       />
 
       <div className="bg-muted pt-8 pb-16">

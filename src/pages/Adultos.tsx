@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
 import { Button } from '@/components/ui/button'
 
 export default function Adultos() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Psicoterapia para Adultos em Jundiaí"
-        description="Atendimento psicanalítico para adultos. Acolhimento para ansiedade, depressão e crises existenciais em Jundiaí e formato online."
+        title="Terapia para Adultos Jundiaí | Psicoterapia e Psicanálise"
+        description="Terapia para adultos Jundiaí focada em autoconhecimento, depressão, estresse e ansiedade. Psicoterapia em Jundiaí na Vila Arens ou formato online."
+        canonicalUrl="/adultos"
+        schema={baseLocalBusinessSchema}
       />
 
       <div className="bg-muted pt-8 pb-16">

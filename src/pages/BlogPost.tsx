@@ -1,6 +1,6 @@
 import { useParams, Navigate, Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, basePersonSchema } from '@/components/SEO'
 import { blogPosts } from '@/lib/blog-data'
 import { ArrowLeft } from 'lucide-react'
 
@@ -12,24 +12,40 @@ export default function BlogPost() {
     return <Navigate to="/404" replace />
   }
 
+  const articleSchema = {
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.imageUrl,
+    author: basePersonSchema,
+    datePublished: post.dateIso,
+  }
+
+  const faqSchema = post.faqs?.length
+    ? {
+        '@type': 'FAQPage',
+        mainEntity: post.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      }
+    : null
+
+  const schemas = faqSchema ? [articleSchema, faqSchema] : [articleSchema]
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title={post.title}
         description={post.excerpt}
-        schema={{
-          '@context': 'https://schema.org',
-          '@type': 'Article',
-          headline: post.title,
-          description: post.excerpt,
-          image: post.imageUrl,
-          author: {
-            '@type': 'Person',
-            name: 'Juliana Munique',
-            url: 'https://julianamunique.com.br/sobre', // Assumed production URL
-          },
-          datePublished: '2026-06-10', // Simplified for mock
-        }}
+        canonicalUrl={`/blog/${post.slug}`}
+        ogImage={post.imageUrl}
+        ogType="article"
+        schema={schemas}
       />
 
       <div className="pt-8 pb-8 bg-muted">

@@ -1,17 +1,15 @@
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, basePersonSchema } from '@/components/SEO'
 
 export default function Sobre() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Sobre Mim | Trajetória e Abordagem"
-        description="Conheça a trajetória de Juliana Munique, psicóloga com formação desde 2011 e especialização pela SBPCamp, atendendo em Jundiaí e online."
+        title="Sobre Mim | Psicóloga Jundiaí | Psicanálise"
+        description="Juliana Munique (CRP 06/106345), Psicóloga Jundiaí especializada em psicanálise. Conheça a trajetória e abordagem no cuidado em saúde mental."
+        canonicalUrl="/sobre"
         schema={{
-          '@context': 'https://schema.org',
-          '@type': 'Person',
-          name: 'Juliana Munique',
-          jobTitle: 'Psicóloga Clínica',
+          ...basePersonSchema,
           alumniOf: 'SBPCamp - Sociedade Brasileira de Psicanálise de Campinas',
         }}
       />

@@ -4,8 +4,10 @@ export interface BlogPost {
   excerpt: string
   content: string
   date: string
+  dateIso: string
   imageUrl: string
   category: string
+  faqs?: { question: string; answer: string }[]
 }
 
 export const blogPosts: BlogPost[] = [
@@ -15,8 +17,26 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Entenda os princípios básicos da psicanálise e por que ela é tão eficaz para o autoconhecimento e tratamento de angústias profundas.',
     date: '10 de Junho, 2026',
+    dateIso: '2026-06-10T08:00:00Z',
     category: 'Psicanálise',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=books&color=brown',
+    faqs: [
+      {
+        question: 'Qual a diferença entre psicanálise e outras terapias?',
+        answer:
+          'Enquanto outras abordagens podem focar na mudança rápida de comportamentos e eliminação de sintomas, a psicanálise foca no autoconhecimento profundo e na investigação das raízes inconscientes que causam o sofrimento, promovendo mudanças estruturais permanentes.',
+      },
+      {
+        question: 'Quanto tempo dura o tratamento psicanalítico?',
+        answer:
+          'Não há um prazo pré-definido. O tempo de análise varia de acordo com a singularidade de cada pessoa, do seu ritmo de elaboração e dos objetivos que surgem ao longo do percurso analítico.',
+      },
+      {
+        question: 'O analista fica calado a sessão inteira?',
+        answer:
+          'Isso é um mito. O psicanalista escuta ativamente e intervém nos momentos em que suas pontuações e interpretações podem ajudar o paciente a criar novos sentidos sobre o que está dizendo. O foco, porém, está sempre em dar o maior espaço possível para a palavra do paciente.',
+      },
+    ],
     content: `
       <p>A psicoterapia psicanalítica não é apenas um espaço para desabafar, mas um mergulho profundo em si mesmo. Criada por Sigmund Freud e desenvolvida por grandes pensadores como Lacan, Winnicott e Klein, ela oferece um caminho de investigação rigoroso e acolhedor do nosso inconsciente.</p>
 
@@ -53,8 +73,26 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'O burnout e a ansiedade generalizada estão cada vez mais presentes. Saiba como identificar os sinais e a importância de buscar ajuda.',
     date: '22 de Maio, 2026',
+    dateIso: '2026-05-22T08:00:00Z',
     category: 'Saúde Mental',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=office&color=brown',
+    faqs: [
+      {
+        question: 'Como saber se estou com Burnout ou apenas cansado?',
+        answer:
+          'O cansaço comum tende a melhorar com descanso e bons fins de semana. O Burnout é uma exaustão crônica, frequentemente acompanhada de distanciamento mental do trabalho, sentimentos de cinismo ou negatividade constantes e uma queda brusca na eficácia profissional, mesmo após períodos razoáveis de descanso.',
+      },
+      {
+        question: 'Devo pedir demissão para curar a ansiedade?',
+        answer:
+          'Não necessariamente. Mudanças drásticas sem reflexão prévia podem apenas transferir a ansiedade para o novo cenário ou para o desemprego. É recomendado buscar ajuda terapêutica primeiro para entender a raiz emocional do problema e fortalecer os próprios limites antes de tomar grandes decisões.',
+      },
+      {
+        question: 'A terapia ajuda a falar sobre o trabalho com os gestores?',
+        answer:
+          'Sim. A terapia ajuda a fortalecer a autoestima e a autopercepção do profissional, dando-lhe muito mais segurança e clareza para estabelecer diálogos difíceis, impor limites saudáveis e comunicar suas necessidades de forma madura e assertiva.',
+      },
+    ],
     content: `
       <p>O ambiente corporativo contemporâneo, muitas vezes, nos coloca em um ritmo frenético de exigências e produtividade. Somos cobrados a estar sempre disponíveis, a entregar mais rápido e a ter uma performance impecável. Contudo, essa demanda irreal frequentemente cobra um preço altíssimo: a nossa saúde mental.</p>
 
@@ -91,8 +129,26 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Por que a relação entre analista e paciente é o principal motor da transformação e da cura na terapia psicanalítica.',
     date: '05 de Abril, 2026',
+    dateIso: '2026-04-05T08:00:00Z',
     category: 'Psicoterapia',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=conversation&color=brown',
+    faqs: [
+      {
+        question: 'É normal não gostar do terapeuta logo na primeira sessão?',
+        answer:
+          'Sim. Às vezes o "santo não bate" de imediato e não há nenhum problema ou falha nisso. Como qualquer relação humana, o vínculo terapêutico precisa de afinidade mútua. Se após algumas sessões você continuar sentindo muito desconforto ou falta de empatia, é totalmente válido procurar outro profissional.',
+      },
+      {
+        question: 'O que fazer se eu sentir raiva do meu terapeuta ao longo do processo?',
+        answer:
+          'O ideal, e mais corajoso, é colocar isso em palavras durante a própria sessão. Na clínica psicanalítica, esses sentimentos intensos (seja raiva, decepção profunda ou muito amor) fazem parte intrínseca do processo transferencial e são um material riquíssimo para entendermos juntos como você se relaciona com as pessoas no mundo lá fora.',
+      },
+      {
+        question: 'O sigilo é realmente garantido em todas as minhas sessões?',
+        answer:
+          'Absolutamente sim. O sigilo profissional absoluto é um dever ético rigorosíssimo, amparado por lei e pelo Conselho Federal de Psicologia. Tudo, sem exceção, o que é dito no consultório (ou através da tela, no caso da terapia online) fica restrito àquele espaço e veementemente protegido pelo terapeuta.',
+      },
+    ],
     content: `
       <p>Quando decidimos iniciar um processo terapêutico, costumamos nos preocupar muito com a linha teórica do profissional ou com a eficácia técnica. No entanto, as evidências clínicas e a própria história da psicanálise provam que o principal fator de sucesso em qualquer psicoterapia não é a técnica pura, mas sim a qualidade do vínculo humano estabelecido entre o paciente e o terapeuta.</p>
 
@@ -129,8 +185,27 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Entenda a origem da carência emocional, seus impactos nocivos nos relacionamentos amorosos e como a psicoterapia atua na construção da autonomia afetiva.',
     date: '15 de Agosto, 2026',
+    dateIso: '2026-08-15T08:00:00Z',
     category: 'Relacionamentos',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=couple&color=brown',
+    faqs: [
+      {
+        question:
+          'Qual a principal diferença entre amar de verdade e ser emocionalmente dependente?',
+        answer:
+          'O amor adulto e saudável é baseado na escolha livre e no desejo constante. Nele, há espaço de sobra para o respeito pela individualidade e pelas escolhas do outro. A dependência, por outro lado, é inteiramente baseada na necessidade urgente e no medo. O dependente não escolhe livremente estar com o outro; ele sente e age como se não conseguisse sobreviver ou respirar psiquicamente sem aquela pessoa específica.',
+      },
+      {
+        question: 'A carência afetiva crônica tem alguma cura definitiva?',
+        answer:
+          'Mais do que focar em um termo médico como "cura", na psicanálise dizemos que o processo terapêutico ajuda o indivíduo a reposicionar-se simbolicamente diante da sua própria história e das suas faltas. Ele aprende ativamente a acolher a própria trajetória, desenvolver autonomia emocional verdadeira e criar as bases para relacionamentos incrivelmente mais leves, autênticos e recíprocos.',
+      },
+      {
+        question: 'É verdade que pessoas muito carentes costumam atrair parceiros abusivos?',
+        answer:
+          'Frequentemente e tragicamente, sim. Pessoas com níveis muito altos de carência afetiva e autoestima prejudicada tendem a tolerar, justificar e relevar atitudes altamente desrespeitosas por um medo aterrador e paralisante da solidão. Essa dinâmica as torna presas emocionalmente fáceis para indivíduos manipuladores, controladores ou narcisistas que se aproveitam dessa vulnerabilidade.',
+      },
+    ],
     content: `
       <p>Sentir falta de afeto ou de companhia é uma experiência humana imensamente natural e esperada. Somos seres inerentemente sociáveis, que anseiam por conexão, amor e pertencimento profundo. Porém, quando essa necessidade básica se torna desproporcional, gerando angústia paralisante constante e conduzindo a escolhas repetitivamente destrutivas, podemos estar diante de um quadro sério de carência afetiva.</p>
 
@@ -178,8 +253,29 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Aprenda a reconhecer os bloqueios e defesas silenciosas do inconsciente que sabotam suas escolhas e como a terapia auxilia no desbloqueio.',
     date: '28 de Julho, 2026',
+    dateIso: '2026-07-28T08:00:00Z',
     category: 'Saúde Mental',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=mind&color=brown',
+    faqs: [
+      {
+        question:
+          'É realmente possível ter bloqueios emocionais há anos e simplesmente não saber o porquê?',
+        answer:
+          'Sim, é extremamente comum e até esperado. Como a vasta maioria dos bloqueios são, por excelência, defesas de origem estritamente inconsciente, eles agem mascarando e escondendo o evento gerador da dor primária. A pessoa sente vivamente o peso, a estagnação e o travamento nos dias de hoje, mas muito dificilmente tem algum acesso imediato à memória específica ou ao complexo de sentimentos confusos do passado que originaram a construção e ativação desse forte bloqueio em primeiro lugar.',
+      },
+      {
+        question:
+          'Os bloqueios emocionais e angústias não resolvidas podem causar problemas ou sintomas físicos?',
+        answer:
+          'Certamente. O nosso corpo inevitavelmente fala e grita aquilo que a nossa mente dolorosamente tenta calar. Emoções bloqueadas, represadas e não elaboradas frequentemente somatizam e aparecem no corpo físico através de crises intensas e dores de cabeça tensionais persistentes, quadros agudos de gastrite nervosa, doenças autoimunes agravadas, dores musculares lombares e cervicais crônicas, e até mesmo na forma de episódios severos, inexplicáveis e assustadores de ansiedade e ataques de pânico generalizado.',
+      },
+      {
+        question:
+          'Quanto tempo de terapia costuma levar para conseguir "destravar" um bloqueio profundo?',
+        answer:
+          'Isso é algo única e totalmente particular de cada paciente em sua jornada e de cada caso clínico. O tempo orgânico da psique definitivamente não corresponde ao tempo ditado pelos ponteiros apressados do relógio no nosso mundo moderno. O percurso e o ritmo dependerão substancialmente da intensidade e da profundidade do trauma formador, das necessárias resistências psíquicas do próprio paciente em lidar com dores antigas, e fundamentalmente da constância, coragem e da regularidade do engajamento no processo de análise para desatar, no tempo certo, esses nós complexos.',
+      },
+    ],
     content: `
       <p>Em algum momento ao longo da vida, quase todos nós já enfrentamos a agoniante sensação de "travar" diante de uma situação importante. Pode ser a dificuldade paralisante de falar em público durante uma reunião, a incapacidade física de chorar no velório de um ente muito querido, ou até mesmo a impossibilidade frustrante de se entregar verdadeiramente e confiar em um novo relacionamento amoroso, mesmo querendo isso com todas as forças.</p>
 
@@ -227,8 +323,28 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Reflexões valiosas sobre os enormes desafios da parentalidade moderna, a repetição inconsciente de padrões herdados e os cinco pilares para o desenvolvimento infantil.',
     date: '12 de Setembro, 2026',
+    dateIso: '2026-09-12T08:00:00Z',
     category: 'Parentalidade',
     imageUrl: 'https://img.usecurling.com/p/800/600?q=family&color=brown',
+    faqs: [
+      {
+        question:
+          'Dizer muito "não" ou colocar regras constantes não tem o grave perigo de traumatizar intensamente o meu adorado e sensível filho hoje em dia nesta época tão focada num apego livre infantil moderno e nas escolhas constantes da vontade do mais jovem da família no geral nas casas felizes de todos pelas ruas agitadas do nosso complicado mundo tecnológico apressado hoje em dia?',
+        answer:
+          'Absolutamente e veementemente pelo tremendo e fundamental contrário comprovado por todos os analistas e estudiosos no assunto e educadores há tempos pelo mundo. A ausência de limites gera insegurança.',
+      },
+      {
+        question:
+          'Por que na maioria das terríveis vezes eu perco a paciência tão facilmente com meus filhos pequenos?',
+        answer:
+          'A resposta da ciência moderna em grande frequência clínica na sala psicanalítica é chocante: na muito imensa maioria das vezes, aquele comportamento específico que nos tira do sério está cutucando feridas antigas mal escondidas de nossas próprias infâncias não curadas.',
+      },
+      {
+        question: 'É possível criar sem repetir os erros dos meus pais?',
+        answer:
+          'Totalmente possível, mas exige trabalho emocional. O primeiro passo é refletir, em um ambiente terapêutico, sobre a sua própria história como filho(a), fazer as pazes com o seu passado e, a partir daí, construir ativamente um modelo de parentalidade mais consciente e menos automático.',
+      },
+    ],
     content: `
       <p>A sonhada ou mesmo a inesperada chegada de um filho inaugura de forma definitiva uma das fases mais intensas, exigentes e verdadeiramente transformadoras na vida e na psique de qualquer adulto. Quase que da noite para o dia, nos vemos responsáveis integralmente pelo cuidado físico, bem como pelo delicado e constante desenvolvimento mental, psíquico e emocional de um novo pequeno ser humano. É inegavelmente uma responsabilidade gigantesca e assustadora. E, sejamos abertos e muito honestos: educar dá um trabalho brutal, cansa física e mentalmente e provoca ondas avassaladoras de insegurança, culpa e medo constante de falhar.</p>
 

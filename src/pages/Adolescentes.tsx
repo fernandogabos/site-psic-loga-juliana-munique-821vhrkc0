@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
 import { Button } from '@/components/ui/button'
 
 export default function Adolescentes() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Psicoterapia para Adolescentes em Jundiaí"
-        description="Apoio psicológico para adolescentes lidarem com ansiedade, identidade e escolhas através da psicanálise. Agende online ou presencial em Jundiaí."
+        title="Psicóloga para Adolescentes Jundiaí | Terapia para Ansiedade"
+        description="Busca psicóloga para adolescentes Jundiaí? Terapia especializada para ansiedade, transição e conflitos através da psicanálise. Atendimento presencial e online."
+        canonicalUrl="/adolescentes"
+        schema={baseLocalBusinessSchema}
       />
 
       <div className="bg-muted pt-8 pb-16">

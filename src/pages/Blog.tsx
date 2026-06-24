@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, basePersonSchema } from '@/components/SEO'
 import { blogPosts } from '@/lib/blog-data'
 
 export default function Blog() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Blog sobre Psicologia e Psicanálise"
-        description="Artigos sobre saúde mental, psicanálise, ansiedade, depressão e autoconhecimento, escritos pela psicóloga Juliana Munique."
+        title="Blog sobre Psicologia | Psicóloga em Jundiaí"
+        description="Artigos e reflexões de Juliana Munique, psicóloga em Jundiaí. Textos sobre saúde mental, psicanálise, carência afetiva e ansiedade."
+        canonicalUrl="/blog"
+        schema={basePersonSchema}
       />
 
       <div className="bg-muted pt-8 pb-16">

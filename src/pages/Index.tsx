@@ -7,28 +7,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { SEO } from '@/components/SEO'
+import { SEO, baseLocalBusinessSchema, basePersonSchema } from '@/components/SEO'
 
 export default function Index() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO
-        title="Psicóloga Clínica em Jundiaí e Online"
-        description="Psicoterapia psicanalítica para adolescentes e adultos em Jundiaí/SP (Vila Arens) e atendimento online. Agende sua consulta."
-        schema={{
-          '@context': 'https://schema.org',
-          '@type': 'LocalBusiness',
-          name: 'Juliana Munique - Psicóloga',
-          image: 'https://img.usecurling.com/p/800/600?q=therapy&color=brown',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Vila Arens',
-            addressLocality: 'Jundiaí',
-            addressRegion: 'SP',
-            addressCountry: 'BR',
-          },
-          telephone: '+5511999999999',
-        }}
+        title="Psicóloga em Jundiaí e Online | Psicoterapia Psicanalítica"
+        description="Juliana Munique é Psicóloga em Jundiaí (Vila Arens) e oferece psicoterapia online. Psicanálise e terapia para adultos e adolescentes. Agende sua consulta."
+        canonicalUrl="/"
+        schema={[baseLocalBusinessSchema, basePersonSchema]}
       />
 
       <section className="relative overflow-hidden bg-background py-20 lg:py-32">

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO } from '@/components/SEO'
+import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -26,8 +26,10 @@ export default function Contato() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contato | Agende sua Consulta"
-        description="Entre em contato para agendar sua consulta de psicoterapia em Jundiaí ou Online. Preencha o formulário ou chame no WhatsApp."
+        title="Contato | Agende com Psicóloga em Jundiaí"
+        description="Agende sua sessão de terapia com psicóloga em Jundiaí na Vila Arens ou atendimento de psicóloga online. Entre em contato pelo WhatsApp (11) 99570-3646."
+        canonicalUrl="/contato"
+        schema={baseLocalBusinessSchema}
       />
 
       <div className="bg-muted pt-8 pb-16">
