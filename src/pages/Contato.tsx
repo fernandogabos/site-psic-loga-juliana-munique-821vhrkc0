@@ -1,28 +1,8 @@
-import { useState } from 'react'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Label } from '@/components/ui/label'
 import { MapPin, Phone, Clock } from 'lucide-react'
-import { toast } from 'sonner'
 
 export default function Contato() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false)
-      toast.success('Mensagem enviada com sucesso! Em breve entrarei em contato para agendarmos.')
-      ;(e.target as HTMLFormElement).reset()
-    }, 1500)
-  }
-
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -42,172 +22,76 @@ export default function Contato() {
             Psicóloga Juliana Munique | CRP: 06/106345
           </p>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Dê o primeiro passo. Preencha o formulário abaixo ou envie uma mensagem diretamente pelo
-            WhatsApp para agendarmos nossa primeira entrevista.
+            Dê o primeiro passo. Entre em contato diretamente pelo WhatsApp para agendarmos nossa
+            primeira entrevista.
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 py-16 lg:py-24 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Info Side */}
-          <div>
-            <h2 className="text-3xl font-serif font-bold text-primary mb-10">
-              Informações de Contato
-            </h2>
+      <div className="container mx-auto px-4 md:px-6 py-16 lg:py-24 max-w-6xl">
+        <div className="flex flex-col items-center mb-12">
+          <h2 className="text-3xl font-serif font-bold text-primary mb-2 text-center">
+            Informações de Contato
+          </h2>
+        </div>
 
-            <div className="space-y-10">
-              <div className="flex gap-6 items-start">
-                <div
-                  className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0"
-                  aria-hidden="true"
-                >
-                  <MapPin className="h-7 w-7 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-primary mb-2">Consultório Jundiaí</h3>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    Rua Moreira César, 319
-                    <br />
-                    Vila Arens II, Jundiaí, SP
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6 items-start">
-                <div
-                  className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0"
-                  aria-hidden="true"
-                >
-                  <Phone className="h-7 w-7 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-primary mb-2">WhatsApp / Telefone</h3>
-                  <p className="text-muted-foreground text-lg mb-2">(11) 99570-3646</p>
-                  <a
-                    href="https://wa.me/message/KCOHOGJC7PANP1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary font-bold hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors inline-block min-h-[44px] py-2 rounded-md"
-                  >
-                    Enviar mensagem agora →
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex gap-6 items-start">
-                <div
-                  className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0"
-                  aria-hidden="true"
-                >
-                  <Clock className="h-7 w-7 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-primary mb-2">Horário de Atendimento</h3>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    Atendimentos sob agendamento, consulte horários disponíveis pelo WhatsApp.
-                  </p>
-                </div>
-              </div>
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="flex flex-col items-center text-center p-8 bg-secondary/40 rounded-[2rem] hover:bg-secondary/60 transition-colors">
+            <div
+              className="bg-secondary p-5 rounded-full flex items-center justify-center shrink-0 mb-6"
+              aria-hidden="true"
+            >
+              <MapPin className="h-8 w-8 text-primary" />
             </div>
-
-            <div className="mt-16 bg-primary text-primary-foreground p-8 rounded-3xl shadow-lg">
-              <h3 className="font-serif font-bold text-2xl mb-4">
-                Atendimento Online para todo Brasil
-              </h3>
-              <p className="text-primary-foreground/80 text-lg leading-relaxed">
-                As sessões online ocorrem por videochamada através de plataformas seguras, com a
-                mesma ética e qualidade do formato presencial.
-              </p>
-            </div>
+            <h3 className="font-bold text-xl text-primary mb-3">Consultório Jundiaí</h3>
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              Rua Moreira César, 319
+              <br />
+              Vila Arens II, Jundiaí, SP
+            </p>
           </div>
 
-          {/* Form Side */}
-          <div className="bg-card border border-border p-8 md:p-12 rounded-[2.5rem] shadow-xl h-fit">
-            <h2 className="text-2xl font-serif font-bold text-primary mb-8">Envie uma Mensagem</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-3">
-                <Label htmlFor="name" className="text-base">
-                  Nome Completo
-                </Label>
-                <Input
-                  id="name"
-                  required
-                  placeholder="Digite seu nome"
-                  className="bg-background h-12 text-base rounded-xl"
-                />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <Label htmlFor="email" className="text-base">
-                    E-mail
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    required
-                    placeholder="seu@email.com"
-                    className="bg-background h-12 text-base rounded-xl"
-                  />
-                </div>
-                <div className="space-y-3">
-                  <Label htmlFor="phone" className="text-base">
-                    WhatsApp
-                  </Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    required
-                    placeholder="(11) 90000-0000"
-                    className="bg-background h-12 text-base rounded-xl"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                <Label htmlFor="modality" className="text-base">
-                  Preferência de Atendimento
-                </Label>
-                <select
-                  id="modality"
-                  className="flex h-12 min-h-[44px] w-full rounded-xl border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  required
-                  defaultValue=""
-                >
-                  <option value="" disabled>
-                    Selecione uma opção...
-                  </option>
-                  <option value="presencial">Presencial (Vila Arens, Jundiaí - SP)</option>
-                  <option value="online">Online (Videochamada)</option>
-                  <option value="indeciso">Ainda não sei / Quero saber mais detalhes</option>
-                </select>
-              </div>
-
-              <div className="space-y-3">
-                <Label htmlFor="message" className="text-base">
-                  Sua Mensagem
-                </Label>
-                <Textarea
-                  id="message"
-                  placeholder="Fique à vontade para falar brevemente sobre o que o motiva a buscar terapia ou qual sua disponibilidade de horários."
-                  className="min-h-[150px] bg-background text-base rounded-xl resize-y"
-                  required
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full h-14 min-h-[56px] text-lg font-bold rounded-full mt-4 bg-primary hover:bg-primary/90 transition-transform hover:scale-[1.02] focus-visible:ring-offset-2"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Enviando sua mensagem...' : 'Enviar Mensagem'}
-              </Button>
-              <p className="text-sm text-center text-muted-foreground mt-6 font-medium">
-                Seus dados estão seguros e serão tratados com absoluto sigilo profissional.
-              </p>
-            </form>
+          <div className="flex flex-col items-center text-center p-8 bg-secondary/40 rounded-[2rem] hover:bg-secondary/60 transition-colors">
+            <div
+              className="bg-secondary p-5 rounded-full flex items-center justify-center shrink-0 mb-6"
+              aria-hidden="true"
+            >
+              <Phone className="h-8 w-8 text-primary" />
+            </div>
+            <h3 className="font-bold text-xl text-primary mb-3">WhatsApp / Telefone</h3>
+            <p className="text-muted-foreground text-lg mb-4">(11) 99570-3646</p>
+            <a
+              href="https://wa.me/message/KCOHOGJC7PANP1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-bold hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors inline-block"
+            >
+              Enviar mensagem agora →
+            </a>
           </div>
+
+          <div className="flex flex-col items-center text-center p-8 bg-secondary/40 rounded-[2rem] hover:bg-secondary/60 transition-colors">
+            <div
+              className="bg-secondary p-5 rounded-full flex items-center justify-center shrink-0 mb-6"
+              aria-hidden="true"
+            >
+              <Clock className="h-8 w-8 text-primary" />
+            </div>
+            <h3 className="font-bold text-xl text-primary mb-3">Horário de Atendimento</h3>
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              Atendimentos sob agendamento, consulte horários disponíveis pelo WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-primary text-primary-foreground p-10 md:p-16 rounded-[2.5rem] shadow-xl text-center max-w-4xl mx-auto">
+          <h3 className="font-serif font-bold text-2xl md:text-3xl mb-6">
+            Atendimento Online para todo Brasil
+          </h3>
+          <p className="text-primary-foreground/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            As sessões online ocorrem por videochamada através de plataformas seguras, garantindo a
+            mesma ética, conforto e qualidade do formato presencial, onde quer que você esteja.
+          </p>
         </div>
       </div>
     </div>
