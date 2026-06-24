@@ -19,17 +19,14 @@ export default function Index() {
         schema={[baseLocalBusinessSchema, basePersonSchema]}
       />
 
-      <section
-        className="relative overflow-hidden py-20 lg:py-32"
-        style={{ backgroundColor: '#8a674e' }}
-      >
+      <section className="relative overflow-hidden" style={{ backgroundColor: '#8a674e' }}>
         <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-20 hidden lg:block pointer-events-none">
           <div className="w-[600px] h-[600px] rounded-full bg-[#F7F3EF] blur-[100px]" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-2xl animate-fade-in-up">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch min-h-[600px] lg:min-h-[700px]">
+            <div className="max-w-2xl animate-fade-in-up flex flex-col justify-center py-16 lg:py-24">
               <span className="inline-block py-1 px-3 rounded-full bg-[#3E322B] text-[#F7F3EF] text-sm font-semibold tracking-wide mb-6">
                 Atendimento Presencial em Jundiaí e Online
               </span>
@@ -58,20 +55,20 @@ export default function Index() {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-fade-in lg:ml-auto">
-              <div className="relative rounded-full overflow-hidden shadow-2xl aspect-square max-w-[400px] mx-auto lg:mx-0 border-8 border-[#D7C2AE]/30">
+            <div className="relative animate-fade-in lg:ml-auto w-full h-full pb-16 lg:pb-0">
+              <div className="relative rounded-full lg:rounded-[2rem] overflow-hidden shadow-2xl aspect-square lg:aspect-auto w-full h-full max-h-[400px] lg:max-h-none max-w-[400px] lg:max-w-[500px] mx-auto lg:ml-auto lg:mr-0 border-8 border-[#D7C2AE]/30">
                 <img
-                  src="/juliana-munique.jpg"
+                  src="https://vxwr1-my.sharepoint.com/:i:/g/personal/fernando_gabos_innovagrupo_com_br/IQDYts-JQ0GVR7UtgKCa2INjAUt8G4boRlFG57t6ng87CGI?e=rkq2ss"
                   onError={(e) => {
                     e.currentTarget.onerror = null
                     e.currentTarget.src =
                       'https://img.usecurling.com/ppl/large?gender=female&seed=juliana'
                   }}
-                  alt="Retrato da Psicóloga Juliana Munique"
-                  className="object-cover w-full h-full"
+                  alt="Foto profissional de Juliana Munique"
+                  className="object-cover w-full h-full object-center"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-[#F7F3EF] p-6 rounded-2xl shadow-xl max-w-xs animate-float hidden md:flex items-center gap-4">
+              <div className="absolute bottom-8 left-4 lg:bottom-24 lg:-left-8 bg-[#F7F3EF] p-6 rounded-2xl shadow-xl max-w-xs animate-float hidden md:flex items-center gap-4 z-20">
                 <div className="bg-[#D7C2AE] p-3 rounded-full text-[#3E322B]" aria-hidden="true">
                   <Sparkles className="h-6 w-6" />
                 </div>
