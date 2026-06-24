@@ -11,6 +11,7 @@ const links = [
   { name: 'Adultos', path: '/adultos' },
   { name: 'Como Funciona', path: '/como-funciona' },
   { name: 'Blog', path: '/blog' },
+  { name: 'Contato', path: '/contato' },
 ]
 
 export function Header() {
