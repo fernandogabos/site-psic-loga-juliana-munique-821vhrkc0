@@ -45,7 +45,7 @@ export default function Index() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary leading-tight mb-6">
                 Um espaço seguro para compreender sua história e construir novos caminhos.
               </h1>
-              <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-lg leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
                 Psicoterapia psicanalítica especializada para adolescentes e adultos. Reconecte-se
                 com sua essência e encontre sentido em meio aos desafios.
               </p>
@@ -76,7 +76,7 @@ export default function Index() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs animate-float hidden md:flex items-center gap-4">
-                <div className="bg-secondary/30 p-3 rounded-full text-primary">
+                <div className="bg-secondary p-3 rounded-full text-primary">
                   <Sparkles className="h-6 w-6" />
                 </div>
                 <div>
@@ -89,12 +89,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-24 bg-muted/40">
+      <section className="py-24 bg-muted">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-primary">
             A Psicanálise como Bússola
           </h2>
-          <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             Acredito que o sofrimento emocional não é algo a ser apenas silenciado, mas
             compreendido. Meu trabalho é oferecer uma escuta atenta, ética e acolhedora, ajudando
             você a desvendar os padrões inconscientes que limitam sua vida e suas relações.
@@ -114,18 +114,18 @@ export default function Index() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">
               Áreas de Atuação
             </h2>
-            <p className="text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               Atendimento especializado focado no desenvolvimento humano em suas diferentes fases.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="group rounded-3xl border border-border bg-card p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="bg-secondary/30 w-16 h-16 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+              <div className="bg-secondary w-16 h-16 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
                 <Heart className="h-8 w-8" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4 text-primary">Para Adolescentes</h3>
-              <p className="text-foreground/70 mb-8 leading-relaxed">
+              <p className="text-muted-foreground mb-8 leading-relaxed">
                 Um espaço livre de julgamentos para lidar com ansiedade, questões de identidade,
                 conflitos familiares e escolhas profissionais em uma fase de intensas
                 transformações.
@@ -139,11 +139,11 @@ export default function Index() {
             </div>
 
             <div className="group rounded-3xl border border-border bg-card p-8 md:p-12 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="bg-secondary/30 w-16 h-16 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
+              <div className="bg-secondary w-16 h-16 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
                 <Brain className="h-8 w-8" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4 text-primary">Para Adultos</h3>
-              <p className="text-foreground/70 mb-8 leading-relaxed">
+              <p className="text-muted-foreground mb-8 leading-relaxed">
                 Acolhimento para angústias, depressão, desafios nos relacionamentos e na carreira.
                 Uma jornada de autoconhecimento para uma vida com mais sentido.
               </p>
@@ -228,7 +228,7 @@ export default function Index() {
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">
                   Psicóloga em Jundiaí (Vila Arens)
                 </h2>
-                <div className="space-y-4 text-foreground/80 leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     Meu consultório está localizado na <strong>Vila Arens</strong>, um bairro de
                     fácil acesso em <strong>Jundiaí - SP</strong>, oferecendo um ambiente seguro,
@@ -250,7 +250,7 @@ export default function Index() {
                   </Button>
                 </div>
               </div>
-              <div className="bg-secondary/20 relative min-h-[400px] lg:min-h-full">
+              <div className="bg-secondary relative min-h-[400px] lg:min-h-full">
                 <img
                   src="https://img.usecurling.com/p/800/800?q=therapy%20office&color=brown"
                   alt="Consultório de Psicologia em Jundiaí"

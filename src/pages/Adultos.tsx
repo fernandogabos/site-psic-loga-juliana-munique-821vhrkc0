@@ -11,7 +11,7 @@ export default function Adultos() {
         description="Atendimento psicanalítico para adultos. Acolhimento para ansiedade, depressão e crises existenciais em Jundiaí e formato online."
       />
 
-      <div className="bg-muted/30 pt-8 pb-16">
+      <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8 max-w-4xl text-center">
           <span className="text-accent font-bold tracking-wider uppercase text-sm mb-4 block">
@@ -20,7 +20,7 @@ export default function Adultos() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
             Psicoterapia para Adultos
           </h1>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Um mergulho profundo nas próprias questões para desatar nós e encontrar novas formas de
             existir no mundo.
           </p>
@@ -34,7 +34,7 @@ export default function Adultos() {
           className="w-full h-80 md:h-[400px] object-cover rounded-3xl shadow-lg mb-16"
         />
 
-        <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary max-w-none text-foreground/80 mb-16">
+        <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary max-w-none text-muted-foreground mb-16">
           <h2>As Angústias da Vida Adulta</h2>
           <p>
             A vida adulta exige constantes adaptações e traz consigo muitas responsabilidades,

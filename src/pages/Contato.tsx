@@ -30,13 +30,13 @@ export default function Contato() {
         description="Entre em contato para agendar sua consulta de psicoterapia em Jundiaí ou Online. Preencha o formulário ou chame no WhatsApp."
       />
 
-      <div className="bg-muted/30 pt-8 pb-16">
+      <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
             Agende uma Conversa
           </h1>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Dê o primeiro passo. Preencha o formulário abaixo ou envie uma mensagem diretamente pelo
             WhatsApp para agendarmos nossa primeira entrevista.
           </p>
@@ -53,12 +53,12 @@ export default function Contato() {
 
             <div className="space-y-10">
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary/30 p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
                   <MapPin className="h-7 w-7 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-xl text-primary mb-2">Consultório Jundiaí</h3>
-                  <p className="text-foreground/80 leading-relaxed text-lg">
+                  <p className="text-muted-foreground leading-relaxed text-lg">
                     Bairro Vila Arens
                     <br />
                     Jundiaí - SP
@@ -71,12 +71,12 @@ export default function Contato() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary/30 p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
                   <Phone className="h-7 w-7 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-xl text-primary mb-2">WhatsApp / Telefone</h3>
-                  <p className="text-foreground/80 text-lg mb-2">(11) 99999-9999</p>
+                  <p className="text-muted-foreground text-lg mb-2">(11) 99999-9999</p>
                   <a
                     href="https://wa.me/5511999999999"
                     target="_blank"
@@ -89,22 +89,22 @@ export default function Contato() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary/30 p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
                   <Mail className="h-7 w-7 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-xl text-primary mb-2">E-mail</h3>
-                  <p className="text-foreground/80 text-lg">contato@julianamunique.com.br</p>
+                  <p className="text-muted-foreground text-lg">contato@julianamunique.com.br</p>
                 </div>
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary/30 p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
                   <Clock className="h-7 w-7 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-xl text-primary mb-2">Horário de Atendimento</h3>
-                  <p className="text-foreground/80 leading-relaxed text-lg">
+                  <p className="text-muted-foreground leading-relaxed text-lg">
                     Segunda a Sexta: 08h às 20h
                     <br />
                     Atendimentos somente com hora marcada.

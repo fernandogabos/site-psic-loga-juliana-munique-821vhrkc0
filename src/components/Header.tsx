@@ -55,7 +55,7 @@ export function Header() {
                     'text-sm font-medium transition-colors hover:text-accent',
                     location.pathname === link.path
                       ? 'text-primary font-bold'
-                      : 'text-foreground/80',
+                      : 'text-muted-foreground',
                   )}
                 >
                   {link.name}
@@ -92,8 +92,8 @@ export function Header() {
                 className={cn(
                   'py-3 px-4 rounded-xl text-base font-medium transition-colors hover:bg-muted',
                   location.pathname === link.path
-                    ? 'text-primary bg-muted/50 font-bold'
-                    : 'text-foreground/80',
+                    ? 'text-primary bg-muted font-bold'
+                    : 'text-muted-foreground',
                 )}
               >
                 {link.name}

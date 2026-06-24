@@ -16,7 +16,7 @@ export default function Sobre() {
         }}
       />
 
-      <div className="bg-muted/30 pt-8 pb-16">
+      <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 text-center md:text-left">
@@ -39,7 +39,7 @@ export default function Sobre() {
             </div>
           </div>
 
-          <div className="md:col-span-7 space-y-8 prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary text-foreground/80 max-w-none">
+          <div className="md:col-span-7 space-y-8 prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary text-muted-foreground max-w-none">
             <h2 className="text-3xl font-serif font-bold text-primary">A escuta como ofício</h2>
             <p>
               Sou psicóloga clínica, graduada desde 2011, e ao longo de mais de uma década tenho me
@@ -69,11 +69,11 @@ export default function Sobre() {
               autoconhecimento.
             </p>
 
-            <div className="bg-secondary/20 p-8 rounded-3xl border border-border mt-12">
+            <div className="bg-secondary p-8 rounded-3xl border border-border mt-12">
               <h4 className="font-serif font-bold text-primary text-2xl mb-4">
                 Formação e Qualificações
               </h4>
-              <ul className="list-disc list-inside space-y-3 mt-4 marker:text-accent font-medium text-foreground/90">
+              <ul className="list-disc list-inside space-y-3 mt-4 marker:text-accent font-medium text-muted-foreground">
                 <li>Graduação em Psicologia (2011)</li>
                 <li>Especialização Clínica em Psicanálise - SBPCamp</li>
                 <li>Supervisão Psicanalítica Contínua</li>

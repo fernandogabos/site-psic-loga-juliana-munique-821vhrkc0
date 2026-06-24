@@ -34,13 +34,13 @@ export default function ComoFunciona() {
         description="Entenda o passo a passo de como iniciar a psicoterapia, duração, sessões e formato online ou presencial em Jundiaí."
       />
 
-      <div className="bg-muted/30 pt-8 pb-16">
+      <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
             Como Funciona o Processo
           </h1>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Dar o primeiro passo pode parecer desafiador. Aqui explico de forma clara como iniciamos
             o nosso percurso terapêutico.
           </p>
@@ -54,11 +54,11 @@ export default function ComoFunciona() {
               key={i}
               className="bg-card border border-border p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              <div className="text-primary mb-8 bg-secondary/30 w-20 h-20 rounded-2xl flex items-center justify-center">
+              <div className="text-primary mb-8 bg-secondary w-20 h-20 rounded-2xl flex items-center justify-center">
                 {step.icon}
               </div>
               <h3 className="text-2xl font-serif font-bold text-primary mb-4">{step.title}</h3>
-              <p className="text-foreground/80 leading-relaxed text-lg">{step.desc}</p>
+              <p className="text-muted-foreground leading-relaxed text-lg">{step.desc}</p>
             </div>
           ))}
         </div>

@@ -11,13 +11,13 @@ export default function Blog() {
         description="Artigos sobre saúde mental, psicanálise, ansiedade, depressão e autoconhecimento, escritos pela psicóloga Juliana Munique."
       />
 
-      <div className="bg-muted/30 pt-8 pb-16">
+      <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
             Blog & Artigos
           </h1>
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
             Reflexões sobre psicanálise, saúde mental e os desafios da vida contemporânea.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function Blog() {
                 <h2 className="text-2xl font-serif font-bold text-primary mb-4 group-hover:text-accent transition-colors line-clamp-2 leading-snug">
                   <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                 </h2>
-                <p className="text-foreground/70 text-base leading-relaxed mb-8 line-clamp-3 flex-1">
+                <p className="text-muted-foreground text-base leading-relaxed mb-8 line-clamp-3 flex-1">
                   {post.excerpt}
                 </p>
                 <div className="mt-auto">

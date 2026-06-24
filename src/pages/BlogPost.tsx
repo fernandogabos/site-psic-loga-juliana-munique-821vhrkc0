@@ -32,7 +32,7 @@ export default function BlogPost() {
         }}
       />
 
-      <div className="pt-8 pb-8 bg-muted/20">
+      <div className="pt-8 pb-8 bg-muted">
         <Breadcrumbs />
       </div>
 
@@ -61,7 +61,7 @@ export default function BlogPost() {
         />
 
         <div
-          className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary prose-a:text-accent hover:prose-a:text-primary prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 max-w-none mx-auto"
+          className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary prose-a:text-accent hover:prose-a:text-primary prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground max-w-none mx-auto"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
@@ -77,7 +77,7 @@ export default function BlogPost() {
             <h4 className="font-serif font-bold text-lg text-primary">
               Escrito por Juliana Munique
             </h4>
-            <p className="text-sm text-foreground/70">
+            <p className="text-sm text-muted-foreground">
               Psicóloga Clínica especialista em Psicanálise.
             </p>
           </div>
