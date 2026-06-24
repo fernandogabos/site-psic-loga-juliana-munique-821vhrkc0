@@ -16,7 +16,7 @@ export default function Adultos() {
       <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8 max-w-4xl text-center">
-          <span className="text-accent font-bold tracking-wider uppercase text-sm mb-4 block">
+          <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">
             Área de Atuação
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
@@ -32,11 +32,11 @@ export default function Adultos() {
       <div className="container mx-auto px-4 md:px-6 py-16 max-w-4xl">
         <img
           src="https://img.usecurling.com/p/1200/500?q=adult%20thinking&color=brown"
-          alt="Adulto em reflexão"
+          alt="Pessoa adulta em momento de reflexão profunda"
           className="w-full h-80 md:h-[400px] object-cover rounded-3xl shadow-lg mb-16"
         />
 
-        <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary max-w-none text-muted-foreground mb-16">
+        <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary max-w-none text-foreground mb-16">
           <h2>As Angústias da Vida Adulta</h2>
           <p>
             A vida adulta exige constantes adaptações e traz consigo muitas responsabilidades,
@@ -81,7 +81,7 @@ export default function Adultos() {
           <Button
             asChild
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-primary-foreground font-bold rounded-full h-14 px-10 text-lg transition-transform hover:scale-105"
+            className="bg-secondary hover:bg-secondary/90 text-foreground font-bold rounded-full min-h-[56px] h-14 px-10 text-lg transition-transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
           >
             <Link to="/contato">Agendar Minha Sessão</Link>
           </Button>

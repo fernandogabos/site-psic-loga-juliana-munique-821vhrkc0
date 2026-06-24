@@ -58,7 +58,10 @@ export default function Contato() {
 
             <div className="space-y-10">
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div
+                  className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0"
+                  aria-hidden="true"
+                >
                   <MapPin className="h-7 w-7 text-primary" />
                 </div>
                 <div>
@@ -72,7 +75,10 @@ export default function Contato() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div
+                  className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0"
+                  aria-hidden="true"
+                >
                   <Phone className="h-7 w-7 text-primary" />
                 </div>
                 <div>
@@ -82,7 +88,7 @@ export default function Contato() {
                     href="https://wa.me/message/KCOHOGJC7PANP1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent font-semibold hover:text-primary transition-colors inline-block"
+                    className="text-primary font-bold hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors inline-block min-h-[44px] py-2 rounded-md"
                   >
                     Enviar mensagem agora →
                   </a>
@@ -90,7 +96,10 @@ export default function Contato() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0">
+                <div
+                  className="bg-secondary p-4 rounded-2xl h-16 w-16 flex items-center justify-center shrink-0"
+                  aria-hidden="true"
+                >
                   <Clock className="h-7 w-7 text-primary" />
                 </div>
                 <div>
@@ -162,7 +171,7 @@ export default function Contato() {
                 </Label>
                 <select
                   id="modality"
-                  className="flex h-12 w-full rounded-xl border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  className="flex h-12 min-h-[44px] w-full rounded-xl border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   required
                   defaultValue=""
                 >
@@ -189,7 +198,7 @@ export default function Contato() {
 
               <Button
                 type="submit"
-                className="w-full h-14 text-lg font-bold rounded-full mt-4 bg-primary hover:bg-primary/90 transition-transform hover:scale-[1.02]"
+                className="w-full h-14 min-h-[56px] text-lg font-bold rounded-full mt-4 bg-primary hover:bg-primary/90 transition-transform hover:scale-[1.02] focus-visible:ring-offset-2"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? 'Enviando sua mensagem...' : 'Enviar Mensagem'}

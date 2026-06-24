@@ -55,13 +55,13 @@ export default function BlogPost() {
       <article className="container mx-auto px-4 md:px-6 py-12 md:py-20 max-w-4xl">
         <Link
           to="/blog"
-          className="inline-flex items-center text-sm font-bold text-accent hover:text-primary transition-colors uppercase tracking-widest mb-12"
+          className="inline-flex items-center text-sm font-bold text-primary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors uppercase tracking-widest mb-12 min-h-[44px] p-2 -ml-2 rounded-md"
         >
-          <ArrowLeft className="w-4 h-4 mr-2" /> Voltar para o Blog
+          <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Voltar para o Blog
         </Link>
 
         <div className="text-center mb-16">
-          <div className="text-accent font-bold uppercase tracking-widest text-sm mb-6">
+          <div className="text-primary font-bold uppercase tracking-widest text-sm mb-6">
             {post.category}
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-8 leading-tight">
@@ -72,12 +72,12 @@ export default function BlogPost() {
 
         <img
           src={post.imageUrl}
-          alt={post.title}
+          alt={`Imagem ilustrativa para o artigo: ${post.title}`}
           className="w-full h-[400px] md:h-[500px] object-cover rounded-[2rem] shadow-xl mb-16"
         />
 
         <div
-          className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary prose-a:text-accent hover:prose-a:text-primary prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground max-w-none mx-auto"
+          className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary prose-a:text-primary hover:prose-a:text-foreground prose-a:focus-visible:outline-none prose-a:focus-visible:ring-2 prose-a:focus-visible:ring-ring prose-p:text-foreground prose-p:leading-relaxed prose-li:text-foreground max-w-none mx-auto"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
@@ -85,7 +85,7 @@ export default function BlogPost() {
           <div className="w-16 h-16 rounded-full overflow-hidden shrink-0">
             <img
               src="https://img.usecurling.com/ppl/thumbnail?gender=female&seed=juliana2"
-              alt="Juliana Munique"
+              alt="Retrato da Psicóloga Juliana Munique"
               className="w-full h-full object-cover"
             />
           </div>

@@ -30,7 +30,7 @@ export default function Sobre() {
               <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[3/4] border-8 border-white">
                 <img
                   src="https://img.usecurling.com/ppl/large?gender=female&seed=juliana2"
-                  alt="Juliana Munique"
+                  alt="Retrato da Psicóloga Juliana Munique"
                   className="w-full h-full object-cover"
                 />
               </div>

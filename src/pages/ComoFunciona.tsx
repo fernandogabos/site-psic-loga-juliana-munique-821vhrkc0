@@ -56,7 +56,10 @@ export default function ComoFunciona() {
               key={i}
               className="bg-card border border-border p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              <div className="text-primary mb-8 bg-secondary w-20 h-20 rounded-2xl flex items-center justify-center">
+              <div
+                className="text-primary mb-8 bg-secondary w-20 h-20 rounded-2xl flex items-center justify-center"
+                aria-hidden="true"
+              >
                 {step.icon}
               </div>
               <h3 className="text-2xl font-serif font-bold text-primary mb-4">{step.title}</h3>
@@ -72,10 +75,10 @@ export default function ComoFunciona() {
           </h2>
           <div className="space-y-10 max-w-4xl mx-auto">
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-3 text-accent">
+              <h3 className="text-2xl font-serif font-bold mb-3 text-primary-foreground">
                 Quanto tempo dura uma psicoterapia?
               </h3>
-              <p className="text-primary-foreground/80 leading-relaxed text-lg">
+              <p className="text-primary-foreground leading-relaxed text-lg">
                 A psicanálise não possui um prazo de validade predefinido. O tempo de duração varia
                 de acordo com as necessidades, o ritmo de elaboração e os objetivos de cada
                 paciente. É um processo artesanal, focado na estrutura profunda do indivíduo, não
@@ -83,10 +86,10 @@ export default function ComoFunciona() {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-3 text-accent">
+              <h3 className="text-2xl font-serif font-bold mb-3 text-primary-foreground">
                 A terapia online tem o mesmo resultado?
               </h3>
-              <p className="text-primary-foreground/80 leading-relaxed text-lg">
+              <p className="text-primary-foreground leading-relaxed text-lg">
                 Sim. A eficácia da psicanálise baseia-se na fala e na escuta, o que se sustenta
                 perfeitamente no ambiente virtual. O fundamental é que, no momento da sessão, você
                 esteja em um lugar onde se sinta à vontade para falar sem interrupções ou receio de
@@ -94,10 +97,10 @@ export default function ComoFunciona() {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-3 text-accent">
+              <h3 className="text-2xl font-serif font-bold mb-3 text-primary-foreground">
                 Atende convênios médicos?
               </h3>
-              <p className="text-primary-foreground/80 leading-relaxed text-lg">
+              <p className="text-primary-foreground leading-relaxed text-lg">
                 Meus atendimentos são exclusivamente particulares, visando garantir a total
                 privacidade, qualidade de tempo e personalização que a clínica psicanalítica exige.
                 No entanto, forneço recibos para que você solicite o reembolso integral ou parcial
@@ -110,10 +113,13 @@ export default function ComoFunciona() {
         <div className="text-center mt-20">
           <Link
             to="/contato"
-            className="text-accent font-bold hover:text-primary transition-colors text-xl inline-flex items-center group"
+            className="text-primary font-bold hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors text-xl inline-flex items-center group p-3 rounded-xl min-h-[44px]"
           >
             Pronto para começar? Entre em contato{' '}
-            <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform"
+              aria-hidden="true"
+            />
           </Link>
         </div>
       </div>
