@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Instagram, Linkedin, MapPin, Mail, Phone } from 'lucide-react'
+import innovaLogo from '@/assets/innovalogobrancotransparente-dd874.png'
 
 export function Footer() {
   return (
@@ -118,9 +119,25 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/90">
-          <p>
-            © {new Date().getFullYear()} Juliana Munique - Psicóloga. Todos os direitos reservados.
-          </p>
+          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 text-center lg:text-left">
+            <a
+              href="https://www.innovagrupo.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded-sm p-1"
+            >
+              <span className="text-[#ffffff] font-medium">Desenvolvido por:</span>
+              <img
+                src={innovaLogo}
+                alt="Innova Soluções Empresariais"
+                className="h-8 w-auto object-contain"
+              />
+            </a>
+            <p>
+              © {new Date().getFullYear()} Juliana Munique - Psicóloga. Todos os direitos
+              reservados.
+            </p>
+          </div>
           <p>CRP 06/106345</p>
         </div>
       </div>
