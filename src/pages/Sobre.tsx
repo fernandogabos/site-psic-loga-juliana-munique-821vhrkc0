@@ -61,11 +61,24 @@ export default function Sobre() {
               de desvendar essas mensagens junto com você.
             </p>
             <p>
-              Não ofereço conselhos prontos ou fórmulas mágicas. Ofereço um ambiente ético, sigiloso
-              e extremamente acolhedor para que você possa falar livremente. É através dessa fala e
-              da minha escuta qualificada que conseguimos encontrar novos contornos para velhas
-              dores, permitindo que você retome as rédeas da sua própria vida com mais autonomia e
-              autoconhecimento.
+              <div>
+                Sozinho é muito difícil e as vezes até impossível compreender a forma que fomos nos
+                constituindo, mas com o auxílio de um profissional podemos reviver experiências
+                angustiantes e traumáticas de nossa vida que serão possíveis de serem
+                ressignificados, trazendo mais tranquilidade, compreensão e aceitação.&nbsp;
+              </div>
+              <div>
+                <br />
+              </div>
+              <div>
+                As nossas dificuldades emocionais, quando não tratadas adequadamente, deterioram a
+                nossa vida e das pessoas a nossa volta. Pense em quanto tempo, experiências,
+                dinheiro, pessoas e oportunidades já não foram perdidas em função de suas emoções e
+                não por uma decisão consciente com bom senso?
+              </div>
+              <div>
+                <br />
+              </div>
             </p>
 
             <div className="bg-secondary p-8 rounded-3xl border border-border mt-12">
