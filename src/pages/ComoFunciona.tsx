@@ -8,22 +8,22 @@ export default function ComoFunciona() {
     {
       icon: <MessageSquare className="h-10 w-10" />,
       title: '1. O Primeiro Contato',
-      desc: 'Tudo começa com uma mensagem. Nós marcaremos um horário para a nossa primeira entrevista (sessão preliminar), onde nos conheceremos.',
+      desc: 'A partir do seu contato via whatsapp, agendaremos um horário exclusivo para a nossa primeira entrevista.',
     },
     {
       icon: <Calendar className="h-10 w-10" />,
       title: '2. Entrevistas Iniciais',
-      desc: 'As primeiras sessões servem para avaliação. Você me conta os motivos que o trouxeram e combinamos o enquadre: honorários, frequência e horários.',
+      desc: 'É fundamental essa primeira conversa para compreender a demanda de cada indivíduo, quais as expectativas e juntos, alinhamos a frequência das sessões, os horários e o valor dos honorários.',
     },
     {
       icon: <Clock className="h-10 w-10" />,
       title: '3. O Processo (Setting)',
-      desc: 'As sessões ocorrem com frequência regular (1 a 2 vezes por semana) e duram 50 minutos. A regularidade é essencial para o fluxo inconsciente.',
+      desc: 'As sessões possuem a duração de 45 à 50 minutos e ocorrem com uma frequência regular, de uma, duas ou mais sessões semanais, de acordo com a necessidade de cada caso.',
     },
     {
       icon: <Laptop className="h-10 w-10" />,
       title: '4. Modalidade',
-      desc: 'Você escolhe: presencial no meu consultório na Vila Arens em Jundiaí, ou online, desde que garanta um ambiente seguro e privativo para a videochamada.',
+      desc: 'Você escolhe: presencial no meu consultório na Vila Arens em Jundiaí, ou online, desde que garanta um ambiente seguro e privativo para a videochamada. Para as sessões online é necessário ter um espaço privado para que não seja interrompido, possuir equipamento com câmera e microfone e conexão estável de internet, pois as sessões são realizadas através de plataforma de vídeo chamada (google meet ou whatsapp) e utilizar fones de ouvido para ter ainda mais privacidade.',
     },
   ]
 
