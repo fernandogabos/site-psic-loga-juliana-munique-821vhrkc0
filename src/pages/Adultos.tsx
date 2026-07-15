@@ -81,9 +81,28 @@ export default function Adultos() {
 
           <h2>O Caminho do Autoconhecimento</h2>
           <p>
-            Através da associação livre — a regra fundamental da psicanálise, onde o paciente é
-            convidado a falar o que lhe vier à mente, sem julgamentos —, os conteúdos inconscientes
-            começam a se revelar e a fazer sentido.
+            <div>
+              Na psicanálise, você é convidado a falar livremente sobre o que vier à mente, sem se
+              preocupar em organizar ou filtrar os pensamentos. Esse é o ponto de partida do
+              processo: um espaço seguro, sem julgamentos, onde sentimentos, lembranças e questões
+              que muitas vezes ficam guardados encontram espaço para aparecer.
+            </div>
+            <div>
+              <br />
+            </div>
+            <div>
+              Aos poucos, esses conteúdos ganham forma e sentido. Como psicóloga, meu papel é te
+              oferecer uma escuta atenta e cuidadosa, ajudando a enxergar aspectos da sua história
+              que, de dentro do próprio sofrimento, costumam ser difíceis de perceber sozinho.
+            </div>
+            <div>
+              <br />
+            </div>
+            <div>
+              Esse caminho ajuda a entender a origem de certos conflitos, a romper padrões que se
+              repetem e a construir novas formas de se relacionar consigo mesmo, com as outras
+              pessoas e com a própria vida.
+            </div>
           </p>
           <p>
             Meu papel como analista é escutar pontuar aquilo que você, imerso na própria dor, não
