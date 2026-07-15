@@ -43,11 +43,16 @@ export default function Adultos() {
         <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary max-w-none text-foreground mb-16">
           <h2>As Angústias da Vida Adulta</h2>
           <p>
-            A vida adulta exige constantes adaptações e traz consigo muitas responsabilidades,
-            pressões profissionais, demandas familiares e crises nos relacionamentos. Muitas vezes,
-            damos conta de tudo isso no modo "automático", engolindo emoções, até que um sintoma
-            (uma crise de ansiedade, uma tristeza persistente, um adoecimento psicossomático) nos
-            obriga a parar.
+            <div>
+              A maturidade traz consigo o peso de constantes exigências profissionais, familiares e
+              relacionais. Na tentativa de responder a todas essas demandas, muitas vezes o sujeito
+              anula seu próprio desejo e passa a operar de forma mecânica, recalcando afetos e
+              silenciando dores. No entanto, o que não é elaborado pela via do pensamento retorna
+              através do corpo e do adoecimento. A crise de ansiedade, o vazio persistente ou a
+              doença psicossomática são os freios de emergência do psiquismo — sintomas que nos
+              obrigam a interromper a repetição e iniciar um verdadeiro trabalho de investigação
+              sobre nós mesmos.
+            </div>
           </p>
 
           <h3>Por que buscar a psicanálise?</h3>
