@@ -35,8 +35,8 @@ export default function Index() {
                 Um espaço seguro para compreender sua história e construir novos caminhos.
               </h1>
               <p className="text-lg md:text-xl text-[#F7F3EF] mb-8 max-w-lg leading-relaxed opacity-90">
-                Psicoterapia psicanalítica especializada para adolescentes e adultos. Reconecte-se
-                com sua essência e encontre sentido em meio aos desafios.
+                Psicoterapia psicanalítica para adolescentes e adultos. Um espaço ético de escuta
+                para a elaboração de conflitos e a construção de novos saberes sobre si mesmo.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -84,12 +84,15 @@ export default function Index() {
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-primary">
-            A Psicanálise como Bússola
+            A Psicanálise como Guia
           </h2>
           <p className="text-lg text-foreground leading-relaxed mb-8">
-            Acredito que o sofrimento emocional não é algo a ser apenas silenciado, mas
-            compreendido. Meu trabalho é oferecer uma escuta atenta, ética e acolhedora, ajudando
-            você a desvendar os padrões inconscientes que limitam sua vida e suas relações.
+            Acredito que o sofrimento emocional não deve ser apenas aliviado, mas compreendido em
+            sua singularidade. Meu trabalho consiste em oferecer um espaço de escuta ética e
+            acolhedora, onde seja possível reconhecer os processos inconscientes que influenciam a
+            forma como você vive, sente e se relaciona. A partir dessa compreensão, torna-se
+            possível construir novas maneiras de lidar com os desafios da vida de forma mais
+            autêntica, leve e consciente.
           </p>
           <Link
             to="/sobre"
