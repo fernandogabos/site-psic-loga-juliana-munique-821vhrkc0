@@ -108,10 +108,17 @@ export default function ComoFunciona() {
                 Quanto tempo dura uma psicoterapia?
               </h3>
               <p className="text-primary-foreground leading-relaxed text-lg">
-                A psicanálise não possui um prazo de validade predefinido. O tempo de duração varia
-                de acordo com as necessidades, o ritmo de elaboração e os objetivos de cada
-                paciente. É um processo artesanal, focado na estrutura profunda do indivíduo, não
-                apenas na supressão imediata de sintomas.
+                Não existe uma resposta exata. Alguns pacientes permanecem por um longo período em
+                terapia, pois levam mais tempo para ressignificar algumas questões. Outros, quando
+                tocam em assuntos mais delicados, decidem por interromper o processo e, outros,
+                recebem alta, mas quando se deparam com alguma situação que sentem dificuldade de
+                lidar, retornam. Um assunto que para uma pessoa é tranquilo, para outra pode causar
+                sofrimento. As dores que atravessam o ser humano são diversas e precisam ser
+                compreendidas e elaboradas individualmente. Mesmo para alguém com muitos anos de
+                psicoterapia não existe uma contraindicação, pois sempre podemos elaborar melhor
+                nossas dificuldades por meio do olhar de um profissional. O tempo não deve ser algo
+                que lhe preocupe, a pressa, a necessidade de respostas e soluções rápidas também são
+                sintomas de ansiedade que necessitamos resolver.
               </p>
             </div>
             <div>
