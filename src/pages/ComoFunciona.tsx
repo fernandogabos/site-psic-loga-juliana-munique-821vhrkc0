@@ -139,8 +139,6 @@ export default function ComoFunciona() {
               <p className="text-primary-foreground leading-relaxed text-lg">
                 Meus atendimentos são exclusivamente particulares, visando garantir a total
                 privacidade, qualidade de tempo e personalização que a clínica psicanalítica exige.
-                No entanto, forneço recibos para que você solicite o reembolso integral ou parcial
-                junto ao seu plano de saúde.
               </p>
             </div>
           </div>
