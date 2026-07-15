@@ -39,7 +39,7 @@ export default function Sobre() {
           </div>
 
           <div className="md:col-span-7 space-y-8 prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary text-muted-foreground max-w-none">
-            <h2 className="text-3xl font-serif font-bold text-primary">A escuta como ofício</h2>
+            <h2 className="text-3xl font-serif font-bold text-primary">A escuta clínica</h2>
             <p>
               Sou psicóloga clínica, graduada desde 2011, e ao longo de mais de uma década tenho me
               dedicado intensamente à escuta e ao cuidado da saúde mental de adolescentes e adultos.
