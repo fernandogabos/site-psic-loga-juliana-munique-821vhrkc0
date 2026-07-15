@@ -24,8 +24,11 @@ export default function Adultos() {
             Psicoterapia para Adultos
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Um mergulho profundo nas próprias questões para desatar nós e encontrar novas formas de
-            existir no mundo.
+            <div>
+              Um processo de investigação de si, voltado à compreensão dos conflitos inconscientes,
+              à elaboração do sofrimento e à descoberta de novas possibilidades de viver.
+            </div>
+            <div>As responsabilidades da vida adulta</div>
           </p>
         </div>
       </div>
