@@ -40,11 +40,13 @@ export default function Adolescentes() {
         <div className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary max-w-none text-foreground mb-16">
           <h2>Os Desafios da Adolescência</h2>
           <p>
-            A transição da infância para a vida adulta é marcada por lutos e descobertas. O
-            adolescente passa por transformações físicas (o luto pelo corpo infantil), sociais (o
-            luto pelos pais da infância) e de identidade. Em meio a tudo isso, a cobrança por
-            decisões como a escolha profissional e a pressão estética e social podem gerar intensa
-            ansiedade.
+            Abandonar a infância significa enfrentar perdas inevitáveis: o corpo que muda de forma,
+            os pais que deixam de ser heróis e uma identidade que precisa ser inteiramente
+            reconstruída. O grande desafio dessa fase é que, exatamente quando o jovem se sente mais
+            vulnerável internamente, o mundo externo passa a exigir certezas. A pressão para
+            escolher uma profissão e a busca exaustiva pela aceitação estética e social transformam
+            essa fase de descobertas em um cenário de intensa ansiedade, exigindo um espaço de
+            escuta e acolhimento.
           </p>
 
           <h3>Quando a terapia é indicada?</h3>
