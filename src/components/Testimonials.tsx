@@ -61,10 +61,7 @@ interface TestimonialsSectionProps {
   className?: string
 }
 
-export function TestimonialsSection({
-  title = 'O que dizem os pacientes',
-  className,
-}: TestimonialsSectionProps) {
+export function TestimonialsSection({ title = 'Avaliações', className }: TestimonialsSectionProps) {
   return (
     <section className={cn('py-24', className)}>
       <div className="container mx-auto px-4 md:px-6">
