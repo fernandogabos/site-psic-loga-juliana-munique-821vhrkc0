@@ -57,8 +57,19 @@ export default function Adultos() {
 
           <h3>Por que buscar a psicanálise?</h3>
           <p>
-            Procurar a psicanálise é decidir que não se quer mais apenas sobreviver aos sintomas,
-            mas compreender de onde eles vêm. O processo é indicado para:
+            <div>
+              Porque o sofrimento não se resolve eliminando apenas os sintomas. Frequentemente
+              repetimos padrões, vivenciamos conflitos nos relacionamentos ou sentimos uma angústia
+              que não conseguimos explicar.&nbsp;&nbsp;
+            </div>
+            <div>
+              <br />
+            </div>
+            <div>
+              A psicanálise proporciona um espaço de escuta profunda para compreender as origens do
+              sofrimento, reconhecer o que atua de forma inconsciente e descobrir novas maneiras de
+              existir, possibilitando mudanças que fazem sentido para história de cada pessoa.&nbsp;
+            </div>
           </p>
           <ul>
             <li>Ansiedade generalizada, fobias e ataques de pânico.</li>
