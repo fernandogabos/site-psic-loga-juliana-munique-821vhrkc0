@@ -126,10 +126,11 @@ export default function ComoFunciona() {
                 A terapia online tem o mesmo resultado?
               </h3>
               <p className="text-primary-foreground leading-relaxed text-lg">
-                Sim. A eficácia da psicanálise baseia-se na fala e na escuta, o que se sustenta
-                perfeitamente no ambiente virtual. O fundamental é que, no momento da sessão, você
-                esteja em um lugar onde se sinta à vontade para falar sem interrupções ou receio de
-                ser ouvido por terceiros.
+                O processo de psicoterapia no modelo online ou presencial segue as mesmas
+                diretrizes, ou seja, é um espaço seguro para falar o que pensamos e sentimos, pois o
+                profissional tem o compromisso com o sigilo das informações. No entanto, dependendo
+                da gravidade do problema, a psicoterapia presencial se torna necessária para o
+                estabelecimento de uma relação terapêutica mais sólida e segura.
               </p>
             </div>
             <div>
