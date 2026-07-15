@@ -48,17 +48,20 @@ export default function Sobre() {
               Minha paixão pela complexidade da mente humana me levou à especialização através da{' '}
               <strong>SBPCamp (Sociedade Brasileira de Psicanálise de Campinas)</strong>. A
               psicanálise não é apenas uma teoria para mim, é uma lente profunda através da qual
-              busco compreender o sofrimento, as angústias e as potencialidades de cada indivíduo
-              que cruza a porta do meu consultório.
+              busco compreender o sofrimento, as angústias e as potencialidades de cada indivíduo.
             </p>
 
             <h3 className="text-2xl font-serif font-bold text-primary mt-12 mb-4">
               A Abordagem Psicanalítica
             </h3>
             <p>
-              Acredito que nossos sintomas — sejam eles ansiedades, medos, ou dores emocionais — são
-              mensagens codificadas do nosso inconsciente. O trabalho terapêutico que proponho é o
-              de desvendar essas mensagens junto com você.
+              Me encantei pela Psicanálise ainda na faculdade, pois pude compreender diferentes
+              questões da minha vida através desta abordagem. A Psicanálise nos dá um grande
+              respaldo para compreender o ser humano e a forma que ele foi se constituindo desde o
+              seu nascimento. Por exemplo, o inconsciente influencia em nossa forma de se comportar
+              e muitas vezes não compreendemos o porquê agimos daquela maneira. Isso acontece,
+              porque o inconsciente guarda informações que não estão disponíveis para a nossa
+              consciência.
             </p>
             <p>
               <div>
