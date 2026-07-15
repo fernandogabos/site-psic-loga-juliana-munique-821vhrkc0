@@ -105,9 +105,7 @@ export default function Adultos() {
             </div>
           </p>
           <p>
-            Meu papel como analista é escutar pontuar aquilo que você, imerso na própria dor, não
-            consegue ouvir sobre si mesmo. Esse processo permite desamarrar os nós que paralisam a
-            vida, abrindo espaço para escolhas mais autênticas e conscientes.
+            <br />
           </p>
         </div>
 
