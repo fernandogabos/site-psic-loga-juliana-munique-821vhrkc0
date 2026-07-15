@@ -73,8 +73,7 @@ export default function ComoFunciona() {
             Como Funciona o Processo
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Dar o primeiro passo pode parecer desafiador. Aqui explico de forma clara como iniciamos
-            o nosso percurso terapêutico.
+            Reconhecer que necessita de ajuda profissional é um ato de coragem.
           </p>
         </div>
       </div>
