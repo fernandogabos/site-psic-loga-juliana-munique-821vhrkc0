@@ -5,6 +5,7 @@ import { blogPosts, AUTHOR_PORTRAIT_URL } from '@/lib/blog-data'
 import { BlogPostSchema } from '@/lib/seo-schemas'
 import { ArrowLeft, Calendar, Tag } from 'lucide-react'
 import educarImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
+import carenciaImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_CARENCIA.png'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -25,7 +26,11 @@ export default function BlogPost() {
 
   const isEducarPost =
     post.title.toLowerCase().includes('educar') || post.slug.toLowerCase().includes('educar')
-  const imageUrl = isEducarPost ? educarImage : post.imageUrl
+  const isCarenciaPost =
+    post.title.toLowerCase().includes('carência') ||
+    post.title.toLowerCase().includes('carencia') ||
+    post.slug.toLowerCase().includes('carencia')
+  const imageUrl = isEducarPost ? educarImage : isCarenciaPost ? carenciaImage : post.imageUrl
   const postUrl = `${BASE_URL}/blog/${post.slug}`
   const schema = BlogPostSchema(post, postUrl, imageUrl)
 
