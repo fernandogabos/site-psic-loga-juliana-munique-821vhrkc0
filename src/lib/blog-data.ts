@@ -1,5 +1,7 @@
 import maternidadeImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_MATERNIDADE.png'
 import fobiaSocialImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_FOBIA SOCIAL.png'
+import bloqueiosEmocionaisImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_BLOQUEIOS EMOCIONAIS.png'
+import educarImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
 
 export const AUTHOR_PORTRAIT_URL =
   '/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-03-dcaf73cb.png'
@@ -59,7 +61,7 @@ export const blogPosts: BlogPost[] = [
     date: '22 de Maio, 2026',
     dateIso: '2026-05-22T08:00:00Z',
     category: 'Saúde Mental',
-    imageUrl: 'https://img.usecurling.com/p/800/600?q=blocked%20mind&color=brown',
+    imageUrl: bloqueiosEmocionaisImg,
     faqs: [
       {
         question: 'É possível ter bloqueios emocionais e não saber o porquê?',
@@ -95,7 +97,7 @@ export const blogPosts: BlogPost[] = [
     date: '05 de Abril, 2026',
     dateIso: '2026-04-05T08:00:00Z',
     category: 'Parentalidade',
-    imageUrl: 'https://img.usecurling.com/p/800/600?q=family%20education&color=brown',
+    imageUrl: educarImg,
     faqs: [
       {
         question: 'Dizer "não" pode traumatizar meu filho?',

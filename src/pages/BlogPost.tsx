@@ -1,103 +1,120 @@
-import { useParams, Navigate, Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO, basePersonSchema } from '@/components/SEO'
+import { SEO, BASE_URL } from '@/components/SEO'
 import { blogPosts, AUTHOR_PORTRAIT_URL } from '@/lib/blog-data'
-import { ArrowLeft } from 'lucide-react'
-import maternalImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_MATERNIDADE.png'
+import { BlogPostSchema } from '@/lib/seo-schemas'
+import { ArrowLeft, Calendar, Tag } from 'lucide-react'
+import educarImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
   const post = blogPosts.find((p) => p.slug === slug)
 
   if (!post) {
-    return <Navigate to="/404" replace />
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-serif font-bold text-primary mb-4">Artigo não encontrado</h1>
+          <Link to="/blog" className="text-primary hover:text-foreground transition-colors">
+            Voltar para o blog
+          </Link>
+        </div>
+      </div>
+    )
   }
 
-  const articleSchema = {
-    '@type': 'Article',
-    headline: post.title,
-    description: post.excerpt,
-    image: post.imageUrl,
-    author: basePersonSchema,
-    datePublished: post.dateIso,
-  }
-
-  const faqSchema = post.faqs?.length
-    ? {
-        '@type': 'FAQPage',
-        mainEntity: post.faqs.map((faq) => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer,
-          },
-        })),
-      }
-    : null
-
-  const schemas = faqSchema ? [articleSchema, faqSchema] : [articleSchema]
+  const isEducarPost =
+    post.title.toLowerCase().includes('educar') || post.slug.toLowerCase().includes('educar')
+  const imageUrl = isEducarPost ? educarImage : post.imageUrl
+  const postUrl = `${BASE_URL}/blog/${post.slug}`
+  const schema = BlogPostSchema(post, postUrl, imageUrl)
 
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={post.title}
+        title={`${post.title} | Blog da Psicóloga Juliana Munique`}
         description={post.excerpt}
         canonicalUrl={`/blog/${post.slug}`}
-        ogImage={post.imageUrl}
-        ogType="article"
-        schema={schemas}
+        schema={schema}
       />
 
-      <div className="pt-8 pb-8 bg-muted">
-        <Breadcrumbs />
+      <div className="bg-muted pt-8 pb-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <Breadcrumbs />
+        </div>
       </div>
 
-      <article className="container mx-auto px-4 md:px-6 py-12 md:py-20 max-w-4xl">
+      <article className="container mx-auto px-4 md:px-6 py-12 max-w-4xl">
         <Link
           to="/blog"
-          className="inline-flex items-center text-sm font-bold text-primary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors uppercase tracking-widest mb-12 min-h-[44px] p-2 -ml-2 rounded-md"
+          className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-foreground transition-colors uppercase tracking-widest mb-8"
         >
-          <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" /> Voltar para o Blog
+          <ArrowLeft className="w-4 h-4" />
+          Voltar para o blog
         </Link>
 
-        <div className="text-center mb-16">
-          <div className="text-primary font-bold uppercase tracking-widest text-sm mb-6">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+          <span className="flex items-center gap-2">
+            <Calendar className="w-4 h-4" />
+            {post.date}
+          </span>
+          <span className="flex items-center gap-2">
+            <Tag className="w-4 h-4" />
             {post.category}
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-8 leading-tight">
-            {post.title}
-          </h1>
-          <div className="text-muted-foreground text-sm font-medium">Publicado em {post.date}</div>
+          </span>
         </div>
 
-        <img
-          src={post.slug === 'funcao-materna-e-a-clinica' ? maternalImage : post.imageUrl}
-          alt={`Imagem ilustrativa para o artigo: ${post.title}`}
-          className="w-full h-[400px] md:h-[500px] object-cover rounded-[2rem] shadow-xl mb-16"
-        />
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-8 leading-tight">
+          {post.title}
+        </h1>
+
+        <div className="aspect-[16/9] overflow-hidden rounded-3xl mb-12 shadow-lg">
+          <img src={imageUrl} alt={post.title} className="w-full h-full object-cover" />
+        </div>
+
+        <div className="flex items-center gap-4 mb-12 pb-8 border-b border-border">
+          <img
+            src={AUTHOR_PORTRAIT_URL}
+            alt="Juliana Munique"
+            className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
+          />
+          <div>
+            <p className="font-serif font-bold text-primary">Juliana Munique</p>
+            <p className="text-sm text-muted-foreground">Psicóloga e Psicanalista</p>
+          </div>
+        </div>
 
         <div
-          className="prose prose-lg md:prose-xl prose-headings:font-serif prose-headings:text-primary prose-a:text-primary hover:prose-a:text-foreground prose-a:focus-visible:outline-none prose-a:focus-visible:ring-2 prose-a:focus-visible:ring-ring prose-p:text-foreground prose-p:leading-relaxed prose-li:text-foreground max-w-none mx-auto"
+          className="prose prose-lg max-w-none text-foreground"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        <div className="mt-20 pt-10 border-t border-border flex items-center gap-6">
-          <div className="w-16 h-16 rounded-full overflow-hidden shrink-0">
-            <img
-              src={AUTHOR_PORTRAIT_URL}
-              alt="Retrato da Psicóloga Juliana Munique"
-              className="w-full h-full object-cover object-top"
-            />
+        {post.faqs && post.faqs.length > 0 && (
+          <div className="mt-16 pt-12 border-t border-border">
+            <h2 className="text-2xl font-serif font-bold text-primary mb-8">
+              Perguntas Frequentes
+            </h2>
+            <div className="space-y-6">
+              {post.faqs.map((faq, index) => (
+                <div key={index} className="bg-muted rounded-2xl p-6">
+                  <h3 className="font-serif font-bold text-primary mb-3">{faq.question}</h3>
+                  <p className="text-foreground leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div>
-            <h4 className="font-serif font-bold text-lg text-primary">
-              Escrito por Juliana Munique
-            </h4>
-            <p className="text-sm text-muted-foreground">
-              Psicóloga Clínica especialista em Psicanálise.
-            </p>
-          </div>
+        )}
+
+        <div className="mt-16 pt-12 border-t border-border text-center">
+          <p className="text-lg text-muted-foreground mb-6">
+            Precisa de ajuda com este ou outro assunto?
+          </p>
+          <Link
+            to="/contato"
+            className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold uppercase tracking-widest text-sm hover:bg-primary/90 transition-colors"
+          >
+            Agendar uma conversa
+          </Link>
         </div>
       </article>
     </div>
