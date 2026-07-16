@@ -1,161 +1,135 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
-import { Calendar, MessageSquare, Clock, Laptop, ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Calendar, MessageSquare, Heart, Clock } from 'lucide-react'
+
+const steps = [
+  {
+    icon: Calendar,
+    title: 'Primeiro Contato',
+    description:
+      'Você me envia uma mensagem e agendamos uma entrevista inicial, onde conversaremos sobre o que te motivou a buscar terapia.',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Entrevista Inicial',
+    description:
+      'Na primeira sessão, conheceremos um pouco sobre sua história e suas demandas. É um momento de acolhimento e alinhamento de expectativas.',
+  },
+  {
+    icon: Heart,
+    title: 'Início do Processo',
+    description:
+      'Definidos os pontos de partida, iniciamos o trabalho terapêutico com sessões semanais, construindo um espaço de confiança e escuta.',
+  },
+  {
+    icon: Clock,
+    title: 'Continuidade',
+    description:
+      'O processo terapêutico se desenvolve no seu ritmo. Cada sessão é um espaço para elaboração, descoberta e construção de novos caminhos.',
+  },
+]
 
 export default function ComoFunciona() {
-  const steps = [
-    {
-      icon: <MessageSquare className="h-10 w-10" />,
-      title: '1. O Primeiro Contato',
-      desc: 'A partir do seu contato via whatsapp, agendaremos um horário exclusivo para a nossa primeira entrevista.',
-    },
-    {
-      icon: <Calendar className="h-10 w-10" />,
-      title: '2. Entrevistas Iniciais',
-      desc: 'É fundamental essa primeira conversa para compreender a demanda de cada indivíduo, quais as expectativas e juntos, alinhamos a frequência das sessões, os horários e o valor dos honorários.',
-    },
-    {
-      icon: <Clock className="h-10 w-10" />,
-      title: '3. O Processo (Setting)',
-      desc: 'As sessões possuem a duração de 45 à 50 minutos e ocorrem com uma frequência regular, de uma, duas ou mais sessões semanais, de acordo com a necessidade de cada caso.',
-    },
-    {
-      icon: <Laptop className="h-10 w-10" />,
-      title: '4. Modalidade',
-      desc: 'Você escolhe: presencial no meu consultório na Vila Arens em Jundiaí, ou online, desde que garanta um ambiente seguro e privativo para a videochamada. Para as sessões online é necessário ter um espaço privado para que não seja interrompido, possuir equipamento com câmera e microfone e conexão estável de internet, pois as sessões são realizadas através de plataforma de vídeo chamada (google meet ou whatsapp) e utilizar fones de ouvido para ter ainda mais privacidade.',
-    },
-  ]
-
-  const faqSchema = {
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Quanto tempo dura uma psicoterapia?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'A psicanálise não possui um prazo de validade predefinido. O tempo de duração varia de acordo com as necessidades, o ritmo de elaboração e os objetivos de cada paciente. É um processo artesanal, focado na estrutura profunda do indivíduo, não apenas na supressão imediata de sintomas.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'A terapia online tem o mesmo resultado?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Sim. A eficácia da psicanálise baseia-se na fala e na escuta, o que se sustenta perfeitamente no ambiente virtual. O fundamental é que, no momento da sessão, você esteja em um lugar onde se sinta à vontade para falar sem interrupções ou receio de ser ouvido por terceiros.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Atende convênios médicos?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Meus atendimentos são exclusivamente particulares, visando garantir a total privacidade, qualidade de tempo e personalização que a clínica psicanalítica exige. No entanto, forneço recibos para que você solicite o reembolso integral ou parcial junto ao seu plano de saúde.',
-        },
-      },
-    ],
-  }
-
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Como Funciona a Terapia | Psicóloga em Jundiaí e Online"
-        description="Entenda como funciona a psicoterapia presencial com psicóloga em Jundiaí ou no formato psicóloga online. Duração, modalidade e primeiras sessões."
+        title="Como Funciona a Psicoterapia | Psicóloga em Jundiaí"
+        description="Entenda como funciona o processo terapêutico: primeira sessão, formato das consultas, frequência e duração do tratamento."
         canonicalUrl="/como-funciona"
-        schema={[baseLocalBusinessSchema, faqSchema]}
+        schema={baseLocalBusinessSchema}
       />
 
       <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
-        <div className="container mx-auto px-4 md:px-6 mt-8 max-w-4xl text-center">
+        <div className="container mx-auto px-4 md:px-6 mt-8 text-center max-w-3xl">
+          <span className="text-primary font-bold tracking-wider uppercase text-sm mb-4 block">
+            O Processo Terapêutico
+          </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
-            Como Funciona o Processo
+            Como Funciona
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Reconhecer que necessita de ajuda profissional é um ato de coragem.
+          <p className="text-lg md:text-xl text-muted-foreground">
+            Conheça cada etapa do caminho terapêutico, desde o primeiro contato até o
+            desenvolvimento contínuo do seu processo de autoconhecimento.
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 py-16 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-24">
-          {steps.map((step, i) => (
+      <div className="container mx-auto px-4 md:px-6 py-16 max-w-5xl">
+        <img
+          src="https://img.usecurling.com/p/1200/500?q=therapy%20session&color=brown"
+          alt="Ambiente acolhedor de consultório psicológico"
+          className="w-full h-80 md:h-[400px] object-cover rounded-3xl shadow-lg mb-16"
+        />
+
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {steps.map((step, index) => (
             <div
-              key={i}
-              className="bg-card border border-border p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300"
+              key={index}
+              className="bg-card border border-border rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-lg transition-shadow"
             >
-              <div
-                className="text-primary mb-8 bg-secondary w-20 h-20 rounded-2xl flex items-center justify-center"
-                aria-hidden="true"
-              >
-                {step.icon}
+              <div className="bg-secondary w-14 h-14 rounded-2xl flex items-center justify-center text-primary mb-6">
+                <step.icon className="h-7 w-7" />
               </div>
-              <h3 className="text-2xl font-serif font-bold text-primary mb-4">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-lg">{step.desc}</p>
+              <div className="text-sm font-bold text-primary uppercase tracking-widest mb-2">
+                Etapa {index + 1}
+              </div>
+              <h2 className="text-2xl font-serif font-bold text-primary mb-4">{step.title}</h2>
+              <p className="text-foreground leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
 
-        {/* FAQ Embedded for AEO */}
-        <div className="bg-primary text-primary-foreground rounded-[3rem] p-10 md:p-16 shadow-lg">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-center">
-            Dúvidas Comuns
+        <div className="bg-secondary rounded-3xl p-8 md:p-12 mb-16">
+          <h2 className="text-3xl font-serif font-bold text-primary mb-8 text-center">
+            Detalhes Práticos
           </h2>
-          <div className="space-y-10 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-3 text-primary-foreground">
-                Quanto tempo dura uma psicoterapia?
-              </h3>
-              <p className="text-primary-foreground leading-relaxed text-lg">
-                Não existe uma resposta exata. Alguns pacientes permanecem por um longo período em
-                terapia, pois levam mais tempo para ressignificar algumas questões. Outros, quando
-                tocam em assuntos mais delicados, decidem por interromper o processo e, outros,
-                recebem alta, mas quando se deparam com alguma situação que sentem dificuldade de
-                lidar, retornam. Um assunto que para uma pessoa é tranquilo, para outra pode causar
-                sofrimento. As dores que atravessam o ser humano são diversas e precisam ser
-                compreendidas e elaboradas individualmente. Mesmo para alguém com muitos anos de
-                psicoterapia não existe uma contraindicação, pois sempre podemos elaborar melhor
-                nossas dificuldades por meio do olhar de um profissional. O tempo não deve ser algo
-                que lhe preocupe, a pressa, a necessidade de respostas e soluções rápidas também são
-                sintomas de ansiedade que necessitamos resolver.
+              <h3 className="font-serif font-bold text-lg text-primary mb-3">Duração da Sessão</h3>
+              <p className="text-foreground">
+                Cada sessão tem duração de aproximadamente 50 minutos, tempo necessário para uma
+                escuta profunda e significativa.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-3 text-primary-foreground">
-                A terapia online tem o mesmo resultado?
-              </h3>
-              <p className="text-primary-foreground leading-relaxed text-lg">
-                O processo de psicoterapia no modelo online ou presencial segue as mesmas
-                diretrizes, ou seja, é um espaço seguro para falar o que pensamos e sentimos, pois o
-                profissional tem o compromisso com o sigilo das informações. No entanto, dependendo
-                da gravidade do problema, a psicoterapia presencial se torna necessária para o
-                estabelecimento de uma relação terapêutica mais sólida e segura.
+              <h3 className="font-serif font-bold text-lg text-primary mb-3">Frequência</h3>
+              <p className="text-foreground">
+                As sessões ocorrem semanalmente, no mesmo horário, garantindo regularidade e
+                continuidade ao processo terapêutico.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-3 text-primary-foreground">
-                Atende convênios médicos?
-              </h3>
-              <p className="text-primary-foreground leading-relaxed text-lg">
-                Meus atendimentos são exclusivamente particulares, visando garantir a total
-                privacidade, qualidade de tempo e personalização que a clínica psicanalítica exige.
+              <h3 className="font-serif font-bold text-lg text-primary mb-3">Formato</h3>
+              <p className="text-foreground">
+                Atendimento presencial em Jundiaí (Vila Arens) ou online por videochamada, com a
+                mesma qualidade e sigilo.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-serif font-bold text-lg text-primary mb-3">Investimento</h3>
+              <p className="text-foreground">
+                Os valores são informados no primeiro contato. Possibilidade de reembolso parcial
+                por planos de saúde.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="text-center mt-20">
-          <Link
-            to="/contato"
-            className="text-primary font-bold hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-colors text-xl inline-flex items-center group p-3 rounded-xl min-h-[44px]"
+        <div className="bg-primary text-primary-foreground p-10 md:p-14 rounded-[3rem] text-center shadow-xl">
+          <h3 className="text-3xl font-serif font-bold mb-6">Pronto para começar?</h3>
+          <p className="mb-10 text-lg opacity-90 max-w-2xl mx-auto leading-relaxed">
+            O primeiro passo é o mais importante. Entre em contato e agende sua entrevista inicial.
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="bg-secondary hover:bg-secondary/90 text-foreground font-bold rounded-full min-h-[56px] h-14 px-10 text-lg transition-transform hover:scale-105"
           >
-            Pronto para começar? Entre em contato{' '}
-            <ArrowRight
-              className="ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform"
-              aria-hidden="true"
-            />
-          </Link>
+            <Link to="/contato">Agendar Primeira Sessão</Link>
+          </Button>
         </div>
       </div>
     </div>
