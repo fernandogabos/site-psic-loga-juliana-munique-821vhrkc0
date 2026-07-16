@@ -1,4 +1,5 @@
 import maternidadeImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_MATERNIDADE.png'
+import fobiaSocialImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_FOBIA SOCIAL.png'
 
 export const AUTHOR_PORTRAIT_URL =
   '/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-03-dcaf73cb.png'
@@ -170,7 +171,7 @@ export const blogPosts: BlogPost[] = [
     date: '28 de Fevereiro, 2026',
     dateIso: '2026-02-28T08:00:00Z',
     category: 'Saúde Mental',
-    imageUrl: 'https://img.usecurling.com/p/800/600?q=social%20anxiety&color=brown',
+    imageUrl: fobiaSocialImg,
     faqs: [
       {
         question: 'Qual a diferença entre fobia social e timidez?',
