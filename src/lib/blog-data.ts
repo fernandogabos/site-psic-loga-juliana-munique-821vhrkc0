@@ -41,48 +41,11 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>Sentir falta de afeto é uma experiência humana natural. Somos seres sociáveis que anseiam por conexão e pertencimento. Porém, quando essa necessidade se torna desproporcional, gerando angústia constante e escolhas destrutivas, podemos estar diante de um quadro de <strong>carência afetiva</strong>.</p>
+      <p>A <strong>carência afetiva</strong> faz com que o indivíduo valorize mais o outro do que a si mesmo por medo de ficar sozinho e outras inseguranças. A pessoa acaba se submetendo ao outro e se vitimiza. A carência revela uma fragilidade humana. A forma que o indivíduo recebeu carinho na infância irá impactar na vida adulta e interferir em como a pessoa dá e recebe afeto. O afeto contribui para a <strong>constituição psíquica</strong> desde o nascimento, sendo fundamental na sua estruturação. Casos graves de privação afetiva podem levar a delinquência ou à psicose. Nos primeiros anos de vida o bebê depende totalmente de sua mãe e, sem ela, não tem a possibilidade de se identificar com um bom cuidado, tornando-se na vida adulta uma pessoa com graves problemas em termos de segurança afetiva.</p>
 
-      <p>A carência afetiva não é apenas uma "fase triste por estar solteiro". Trata-se de um vazio interno persistente, uma percepção de que a própria existência não se basta, necessitando ininterruptamente da validação e da aprovação do outro para sentir-se completa.</p>
+      <p><strong>Sintomas de carência afetiva</strong>: dependência, ciúmes, controle excessivo, medo de ficar sozinho, nos relacionamentos acaba sufocando o outro, vitimização, submissão, entre outros. Sair da carência exigirá muito esforço, foco e comprometimento. Em terapia, o paciente poderá compreender o que é um relacionamento saudável e analisar quais mudanças de comportamento precisa realizar.</p>
 
-      <h2>As Raízes na Infância</h2>
-
-      <p>Para compreender a força da carência em um adulto, a psicanálise nos convida a olhar para as primeiras relações. Como fomos amparados na infância? Frequentemente, falhas nesse ambiente inicial — negligência, superproteção ou indisponibilidade emocional — deixam marcas profundas.</p>
-
-      <p>Essas marcas estruturam a psique em torno de uma falta. Na vida adulta, a busca desesperada para preencher essa lacuna faz com que a pessoa projete em parceiros a fantasia de que aquele outro será o seu "salvador".</p>
-
-      <h2>Como a Carência se Manifesta</h2>
-
-      <p>Na prática dos relacionamentos, a carência afetiva se manifesta por meio de comportamentos que, ironicamente, afastam as pessoas que mais desejamos manter por perto. Os principais sintomas incluem:</p>
-
-      <ul>
-        <li><strong>Dependência emocional:</strong> a incapacidade de tomar decisões sem o aval do outro e o terror de que a vida perderá o sentido caso o relacionamento termine.</li>
-        <li><strong>Ciúmes excessivo e controle:</strong> o medo do abandono gera uma necessidade doentia de controlar os passos e as relações do parceiro.</li>
-        <li><strong>Controle excessivo:</strong> monitorar redes sociais, exigir respostas imediatas e não respeitar o espaço individual do outro.</li>
-        <li><strong>Medo de ficar sozinho:</strong> permanecer em relacionamentos insatisfatórios ou tóxicos apenas para evitar o vazio da solidão.</li>
-        <li><strong>Vitimização constante:</strong> uma postura crônica de ressentimento, sentindo-se sempre injustiçado ou não priorizado.</li>
-        <li><strong>Submissão:</strong> tolerar maus-tratos e anular os próprios desejos pelo pavor de perder o outro.</li>
-      </ul>
-
-      <h2>A Importância da Relação Terapêutica</h2>
-
-      <p>O primeiro passo para a mudança é reconhecer que nenhum parceiro poderá preencher o vazio deixado por questões infantis mal elaboradas. A <strong>relação terapêutica</strong> oferece o espaço seguro e sem julgamentos necessário para que o indivíduo entre em contato com essa dor originária.</p>
-
-      <p>Na clínica psicanalítica, caminhamos lado a lado com o paciente para que ele possa passar pelo luto saudável daquilo que não recebeu no passado, aprender a suportar a falta e passar a se relacionar a partir de um <strong>desejo genuíno</strong>, e não do desespero e da necessidade infantil.</p>
-
-      <p>A <strong>relação terapêutica</strong> é, portanto, o motor principal da transformação. É através do vínculo de confiança com o analista que o paciente descobre que pode existir e ser amado sem precisar se anular ou se submeter.</p>
-
-      <hr/>
-      <h2>Perguntas Frequentes (FAQ)</h2>
-
-      <h3>Qual a diferença entre amar e ser emocionalmente dependente?</h3>
-      <p>O amor saudável é baseado na escolha livre e no desejo. A dependência é baseada na necessidade urgente e no medo. O dependente sente que não consegue sobreviver psiquicamente sem o outro.</p>
-
-      <h3>A carência afetiva tem cura?</h3>
-      <p>Na psicanálise, o processo terapêutico ajuda o indivíduo a reposicionar-se diante da própria história, desenvolver autonomia emocional e criar relacionamentos mais autênticos e recíprocos.</p>
-
-      <h3>Pessoas carentes atraem parceiros abusivos?</h3>
-      <p>Frequentemente sim. Pessoas com alta carência afetiva tendem a tolerar atitudes desrespeitosas por medo da solidão, tornando-se vulneráveis a relacionamentos abusivos.</p>
+      <p>A <strong>relação de confiança</strong> entre a dupla paciente e terapeuta será necessária, pois como não teve essa relação de cuidado, a pessoa tende a romper o processo por medo de reviver o momento traumático da infância. Em especial, a <strong>raiva reprimida</strong> e o abafamento das frustrações na tentativa de agradar os outros precisam ser identificados e expressos de forma adequada para retomar o equilíbrio nas relações.</p>
     `,
   },
   {
@@ -112,48 +75,13 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>Em algum momento da vida, quase todos nós já enfrentamos a sensação de "travar" diante de uma situação importante. Pode ser a dificuldade de falar em público, a incapacidade de chorar em um momento de perda, ou a impossibilidade de confiar em um novo relacionamento.</p>
+      <div style="text-align: center;">
+      <p>Muitos pacientes relatam que se sentem paralisados, não conseguem progredir, sempre acontece algo de errado em suas vidas, os relacionamentos não dão certo e não compreendem o porquê. Cada indivíduo tem uma história que foi sendo construída desde o nascimento. O ambiente que esteve inserido e as condições que foram criados influenciam na sua forma de se relacionar com o mundo. Aquilo que nos causa medo, dor, ansiedade, tendemos a evitar a qualquer custo. Desta forma, surgem os <strong>bloqueios emocionais</strong> que nos impedem de enfrentar as situações difíceis. Esses bloqueios, são <strong>mecanismos de defesa</strong> do nosso <strong>inconsciente</strong> para nos "proteger do sofrimento". No entanto, os <strong>bloqueios emocionais</strong> colaboram para o adoecimento. Quando o ser humano adoece, há uma impossibilidade de transformação.</p>
 
-      <p>Essas "travas" silenciosas são conhecidas na psicologia como <strong>bloqueios emocionais</strong>. Tratam-se de barreiras psicológicas erguidas de forma inconsciente, com o objetivo de nos proteger de sentimentos que, no passado, foram percebidos como dolorosos demais para serem suportados.</p>
+      <p><strong>Principais sinais de bloqueios emocionais</strong>: Não conseguir conversar sobre determinados assuntos, insegurança perante situações novas, falta de confiança no outro, medo da rejeição, dificuldade em aceitar a opinião do outro, pensamentos negativos frequentes, arrumar desculpas para justificar a situação que se encontra, entre outros.</p>
 
-      <h2>Mecanismos de Defesa do Inconsciente</h2>
-
-      <p>Nossa mente funciona como um sistema de proteção autônomo incrivelmente complexo. Quando vivenciamos situações de trauma, rejeições agudas ou experiências que causam angústia intolerável, o psiquismo cria e ativa <strong>mecanismos de defesa</strong>. O mais conhecido deles é o recalque, que varre a memória dolorosa para o inconsciente.</p>
-
-      <p>Esses <strong>mecanismos de defesa</strong> são, por excelência, <strong>defesas de origem inconsciente</strong> que agem mascarando e escondendo o evento gerador da dor primária. A pessoa sente o peso e a estagnação no presente, mas dificilmente tem acesso à memória que originou o bloqueio.</p>
-
-      <p>O grande problema é que essas emoções não desaparecem. Elas continuam ativas no fundo da mente. E para garantir que não venham à tona, a mente constrói os bloqueios emocionais. É como se construíssemos um muro de contenção ao nosso redor. A tragédia é que o mesmo muro que nos defende também nos isola e nos impede de viver plenamente.</p>
-
-      <h2>Sinais de Bloqueios Emocionais</h2>
-
-      <p>Identificar um bloqueio exige esforço, pois a pessoa raramente percebe o muro que construiu. Fique atento a alguns sinais importantes:</p>
-
-      <ul>
-        <li><strong>Dificuldade extrema em falar sobre si mesmo:</strong> mudança brusca de assunto ou desconforto intenso quando o papo envolve sentimentos íntimos.</li>
-        <li><strong>Insegurança crônica:</strong> medo excessivo do julgamento alheio que impede a tomada de decisões e estagna projetos de vida.</li>
-        <li><strong>Fuga da intimidade:</strong> começar relacionamentos apaixonados, mas sabotá-los assim que a conexão se aprofunda.</li>
-        <li><strong>Apatia emocional:</strong> viver emocionalmente anestesiado, incapaz de sentir grande alegria ou tristeza em situações marcantes.</li>
-      </ul>
-
-      <h2>A Importância da Ajuda Profissional</h2>
-
-      <p>Nenhum muro emocional é destruído na força bruta. Fazer isso pode desmoronar o próprio paciente. Na psicoterapia de base psicanalítica, o trabalho de dissolver os bloqueios é tecido com extrema paciência, segurança e acolhimento radical.</p>
-
-      <p>A <strong>importância da ajuda profissional</strong> reside justamente no fato de que o analista oferece o suporte necessário para que o paciente se aproxime da ferida original no seu próprio tempo. Sem esse amparo especializado, tentar acessar essas dores reprimidas pode ser revitimizador e perigoso.</p>
-
-      <p>Quando a emoção reprimida finalmente ganha palavras e pode ser revivida de forma segura dentro da relação terapêutica, o medo primitivo começa a ceder espaço. É nesse momento que os velhos muros começam a baixar, permitindo que a pessoa volte a fluir nos relacionamentos, desabroche em sua carreira e restabeleça a paz consigo mesma.</p>
-
-      <hr/>
-      <h2>Perguntas Frequentes (FAQ)</h2>
-
-      <h3>É possível ter bloqueios emocionais e não saber o porquê?</h3>
-      <p>Sim, é extremamente comum. Como os bloqueios são defesas de origem inconsciente, eles escondem o evento gerador da dor primária. A pessoa sente o travamento, mas dificilmente tem acesso à memória que originou o bloqueio.</p>
-
-      <h3>Bloqueios emocionais podem causar sintomas físicos?</h3>
-      <p>Certamente. Emoções bloqueadas frequentemente somatizam através de dores de cabeça tensionais, gastrite nervosa, dores musculares crônicas e episódios de ansiedade e pânico.</p>
-
-      <h3>Quanto tempo leva para destravar um bloqueio profundo?</h3>
-      <p>Isso é particular de cada paciente. O tempo da psique não corresponde ao tempo do relógio. Dependerá da intensidade do trauma, das resistências psíquicas e da constância no processo de análise.</p>
+      <p><strong>Como tratar?</strong> Primeiramente, é fundamental ter coragem para reconhecer que necessita de ajuda e buscar um profissional adequado. As travas criadas na infância são sempre dificuldades de relacionamento com a família, por isso buscar ajuda pode ser tão difícil, pois significa em nosso <strong>inconsciente</strong> ter de enfrentar novamente dores e sentimentos que não foram bem acolhidos na ocasião. O esforço consciente e contínuo na <strong>psicoterapia</strong> é necessário para reestabelecer a confiança que foi perdida e, assim, poder recuperar a espontaneidade de uma vida livre de bloqueios através de um <strong>autoenfrentamento honesto</strong> de quem realmente somos.</p>
+      </div>
     `,
   },
   {
