@@ -16,10 +16,10 @@ export default function Blog() {
       <div className="bg-muted pt-8 pb-16">
         <Breadcrumbs />
         <div className="container mx-auto px-4 md:px-6 mt-8 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6 text-center">
             Blog & Artigos
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-center pr-[0px]">
             Reflexões sobre psicanálise, saúde mental e os desafios da vida contemporânea.
           </p>
         </div>
