@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Linkedin, MapPin, Mail, Phone } from 'lucide-react'
+import { Instagram, Linkedin, MapPin, Phone } from 'lucide-react'
 import innovaLogo from '@/assets/innovalogobrancotransparente-dd874.png'
 
 export function Footer() {
@@ -77,10 +77,6 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-6 w-6 shrink-0 text-background" aria-hidden="true" />
                 <span>(11) 99570-3646</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-6 w-6 shrink-0 text-background" aria-hidden="true" />
-                <span>contato@julianamunique.com.br</span>
               </li>
             </ul>
           </div>
