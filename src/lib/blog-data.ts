@@ -1,3 +1,5 @@
+import maternidadeImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_MATERNIDADE.png'
+
 export const AUTHOR_PORTRAIT_URL =
   '/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-03-dcaf73cb.png'
 
@@ -136,7 +138,7 @@ export const blogPosts: BlogPost[] = [
     date: '15 de Março, 2026',
     dateIso: '2026-03-15T08:00:00Z',
     category: 'Psicanálise',
-    imageUrl: 'https://img.usecurling.com/p/800/600?q=therapy%20session&color=brown',
+    imageUrl: maternidadeImg,
     faqs: [
       {
         question: 'O que significa "função materna" na psicoterapia?',
