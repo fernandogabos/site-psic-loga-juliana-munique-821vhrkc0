@@ -2,6 +2,7 @@ import maternidadeImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_MATERN
 import fobiaSocialImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_FOBIA SOCIAL.png'
 import bloqueiosEmocionaisImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_BLOQUEIOS EMOCIONAIS.png'
 import educarImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
+import carenciaImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_CARENCIA.png'
 
 export const AUTHOR_PORTRAIT_URL =
   '/visual-edits/espa-o-lume-juliana-munique-psicologa-psicanalista-jundiai-coworking-consultorio-03-dcaf73cb.png'
@@ -27,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     date: '10 de Junho, 2026',
     dateIso: '2026-06-10T08:00:00Z',
     category: 'Relacionamentos',
-    imageUrl: 'https://img.usecurling.com/p/800/600?q=lonely%20couple&color=brown',
+    imageUrl: carenciaImg,
     faqs: [
       {
         question: 'Qual a diferença entre amar e ser emocionalmente dependente?',
