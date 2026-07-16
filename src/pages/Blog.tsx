@@ -35,7 +35,8 @@ export default function Blog() {
                 ? bloqueiosEmocionaisImg
                 : post.slug === 'por-que-educar-e-dificil'
                   ? educarImg
-                  : post.imageUrl            return (
+                  : post.imageUrl
+            return (
               <article
                 key={post.slug}
                 className="group flex flex-col bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
