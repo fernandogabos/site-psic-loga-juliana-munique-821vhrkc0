@@ -3,6 +3,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, basePersonSchema } from '@/components/SEO'
 import { blogPosts, AUTHOR_PORTRAIT_URL } from '@/lib/blog-data'
 import { ArrowLeft } from 'lucide-react'
+import maternalImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_MATERNIDADE.png'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -71,7 +72,7 @@ export default function BlogPost() {
         </div>
 
         <img
-          src={post.imageUrl}
+          src={post.slug === 'funcao-materna-e-a-clinica' ? maternalImage : post.imageUrl}
           alt={`Imagem ilustrativa para o artigo: ${post.title}`}
           className="w-full h-[400px] md:h-[500px] object-cover rounded-[2rem] shadow-xl mb-16"
         />
