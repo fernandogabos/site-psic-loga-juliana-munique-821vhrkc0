@@ -4,6 +4,7 @@ import { SEO, basePersonSchema } from '@/components/SEO'
 import { blogPosts } from '@/lib/blog-data'
 import bloqueiosEmocionaisImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_BLOQUEIOS EMOCIONAIS.png'
 import educarImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
+import carenciaImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_CARENCIA.png'
 
 export default function Blog() {
   return (
@@ -35,7 +36,9 @@ export default function Blog() {
                 ? bloqueiosEmocionaisImg
                 : post.slug === 'por-que-educar-e-dificil'
                   ? educarImg
-                  : post.imageUrl
+                  : post.slug === 'carencia-afetiva'
+                    ? carenciaImg
+                    : post.imageUrl
             return (
               <article
                 key={post.slug}
