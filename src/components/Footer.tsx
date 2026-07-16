@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Linkedin, MapPin, Phone } from 'lucide-react'
+import { Instagram, MapPin, Phone } from 'lucide-react'
 import innovaLogo from '@/assets/innovalogobrancotransparente-dd874.png'
 
 export function Footer() {
@@ -85,22 +85,13 @@ export function Footer() {
             <h4 className="font-serif font-bold text-lg text-primary-foreground">Conecte-se</h4>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/julianamunique"
+                href="https://www.instagram.com/psi.jumunique?igsh=bHI3eGxpcmNnZW5y"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/julianamunique"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" aria-hidden="true" />
               </a>
             </div>
             <div className="pt-4">
