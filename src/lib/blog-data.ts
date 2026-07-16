@@ -111,37 +111,21 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>A chegada de um filho inaugura uma das fases mais intensas e transformadoras na vida de qualquer adulto. De repente, somos responsáveis pelo cuidado físico e pelo delicado desenvolvimento emocional de um novo ser humano. E, sejamos honestos: <strong>educar dá um trabalho brutal</strong>, cansa e provoca ondas de insegurança e medo constante de falhar.</p>
+      <p>Independente se os pais são <strong>biológicos ou não</strong>, <strong>educar</strong> é uma tarefa que exige muita <strong>disponibilidade e responsabilidade</strong>. O responsável pela educação consegue transmitir somente aquilo que teve como referência em sua vida. Sendo assim, os pais acabam educando seus filhos da mesma forma que foram educados (<strong>educação muito severa, permissiva ou com alguma negligência</strong>).</p>
 
-      <p>Não existe um "manual infalível da criança perfeita". A dificuldade na educação moderna mora no fato de que educar não é um ato unilateral de adestramento. A educação é, acima de tudo, um encontro complexo entre duas subjetividades: a dos pais, que carregam sua bagagem e traumas; e a da criança, que está descobrindo o mundo.</p>
+      <p>Para educar é necessário promover um <strong>ambiente afetivo, seguro e com disciplina</strong>. Educar envolve questões que são importantes para a criança que está se desenvolvendo. Segue cinco pontos para prestar atenção:</p>
 
-      <h2>A Repetição dos Modelos Herdados</h2>
+      <p><strong>1 - Relação afetiva</strong> - demonstrar carinho faz com que a criança e/ou adolescente se sinta seguro para ser espontâneo. Ter pais que realmente participam do dia a dia, se preocupem com o que estão fazendo e descobrindo, colabora para o <strong>desenvolvimento da autoconfiança e autoestima</strong>.</p>
 
-      <p>Muitas vezes, a exaustão dos pais está atrelada à repetição automática de padrões de criação que viveram em sua própria infância. Inconscientemente, tendemos a reproduzir com nossos filhos o mesmo modelo educacional que recebemos — seja autoritário e punitivo, ou negligente e distante.</p>
+      <p><strong>2 - Desenvolvimento</strong> - prestar atenção nas habilidades que estão sendo adquiridas, mas não comparar os filhos e nem comparar a criança com outros colegas. Cada criança deve ser <strong>respeitada em sua individualidade</strong>.</p>
 
-      <p>O outro extremo igualmente comum é a tentativa desesperada de fazer "exatamente o oposto" de tudo o que os pais fizeram, caindo na permissividade total pelo pânico de repetir os erros do passado. Encontrar o caminho saudável do meio é o grande desafio da maturidade adulta.</p>
+      <p><strong>3 - A importância do NÃO</strong> - uma dose de frustação é necessária, pois não se pode ter tudo no momento que se deseja. É importante explicar o porquê das decisões para ser compreensivo para a criança. <strong>Regras claras</strong> são necessárias para o desenvolvimento.</p>
 
-      <h2>Os 5 Pontos Essenciais Para Pais</h2>
+      <p><strong>4 - Autoconhecimento</strong> - é importante que os pais compreendam as suas próprias dificuldades e se prontifiquem a se desenvolverem. <strong>Assumir os próprios erros, pedir desculpas, rever prioridades, buscar conhecimento</strong>, são atitudes que contribuem para o aprendizado da criança.</p>
 
-      <ul>
-        <li><strong>1. Relação afetiva:</strong> O primeiro e mais essencial passo é garantir que a criança sinta-se incondicionalmente amada e segura na relação familiar. É a certeza desse amor seguro que dá vigor psicológico para que a criança possa enfrentar, mais adiante, as frustrações do mundo.</li>
-        <li><strong>2. Desenvolvimento:</strong> Todo filho é único e traz consigo uma temporalidade que exige ser respeitada. A criança tem o seu próprio ritmo motor, afetivo e cognitivo. Evitar comparações cruéis com irmãos ou crianças alheias é abrir espaço amoroso para que construa uma autoestima baseada no que de fato é, e não no que os adultos projetam nela.</li>
-        <li><strong>3. A importância do NÃO:</strong> Frustrar coerentemente os desejos onipotentes da criança e saber dizer "não" não é falta de amor. Muito pelo contrário: o limite é o contorno vital para a proteção. Crianças precisam de referências sólidas e regras claras, sustentadas com firmeza e muito afeto, para se sentirem internamente contidas e protegidas de seus próprios impulsos excessivos.</li>
-        <li><strong>4. Autoconhecimento:</strong> Nossos filhos atuam como espelhos emocionais que expõem diariamente todas as nossas questões não resolvidas. Fazer a sua própria psicoterapia é fundamental. Pais que têm a coragem de conhecer e tratar suas próprias feridas ganham cada vez menos chance de projetar irracionalmente suas frustrações na vida da criança.</li>
-        <li><strong>5. Comunicação:</strong> A criança não é um "adulto em miniatura". Ela é alguém em formação que compreende o ambiente através das emoções sinceras e do afeto. Nomeie os sentimentos, abaixe-se para escutar genuinamente os medos e crie um espaço seguro de conversa dentro de casa, onde a palavra tenha seu lugar eterno — no lugar do silêncio hostil ou das ameaças punitivas.</li>
-      </ul>
+      <p><strong>5 - Comunicação</strong> - ter um bom diálogo em casa é importante não só para a criança, mas para todos que vivem neste ambiente. Conseguir <strong>falar abertamente das emoções e com respeito</strong>, facilita a comunicação de todos. Respeitar a opinião e explicar as dúvidas com tranquilidade facilita o aprendizado.</p>
 
-      <hr/>
-      <h2>Perguntas Frequentes (FAQ)</h2>
-
-      <h3>Dizer "não" pode traumatizar meu filho?</h3>
-      <p>Absolutamente pelo contrário. A ausência de limites gera insegurança. O limite dito com calma, clareza e afeto estrutura e protege a psique da criança, sem qualquer traço de humilhação ou agressão.</p>
-
-      <h3>Por que perco a paciência tão facilmente com meus filhos?</h3>
-      <p>Na maioria das vezes, o comportamento que nos tira do sério está cutucando feridas antigas mal curadas de nossa própria infância. Buscar psicoterapia ajuda a entender e curar esses gatilhos.</p>
-
-      <h3>É possível criar sem repetir os erros dos meus pais?</h3>
-      <p>Totalmente possível, mas exige trabalho emocional. O primeiro passo é refletir sobre a sua própria história como filho(a) e construir ativamente um modelo de parentalidade mais consciente.</p>
+      <p>O essencial para educar é promover um <strong>ambiente facilitador e saudável</strong>, pois é no <strong>ambiente familiar</strong> que começamos nossas experiências para expandir as <strong>relações interpessoais</strong> posteriormente.</p>
     `,
   },
   {
@@ -203,64 +187,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>A <strong>fobia social</strong>, também conhecida como transtorno de ansiedade social, é muito mais do que simples timidez. É um medo persistente e intenso de situações sociais nas quais a pessoa sente que pode ser observada, julgada ou avaliada negativamente por outros. Esse medo é tão paralisante que interfere significativamente na vida pessoal, profissional e afetiva do indivíduo.</p>
-
-      <p>É fundamental compreender a <strong>distinção entre fobia social e timidez não patológica</strong>. A timidez é um traço de personalidade: a pessoa pode se sentir desconfortável em certas situações, mas consegue enfrentá-las e levar sua vida normalmente. A <strong>fobia social</strong>, por outro lado, é um transtorno que gera sofrimento intenso e leva à esquiva — a pessoa foge sistematicamente de qualquer situação que possa expô-la ao julgamento alheio.</p>
-
-      <h2>Sintomas Físicos da Fobia Social</h2>
-
-      <p>O corpo reage de forma intensa diante das situações temidas. Os <strong>sintomas físicos</strong> da fobia social são reais e angustiantes, frequentemente confundidos com problemas cardíacos ou outras condições médicas. Os principais incluem:</p>
-
-      <ul>
-        <li><strong>Taquicardia</strong>: o coração acelerado e palpitações intensas que surgem antes ou durante situações sociais.</li>
-        <li><strong>Sudorese</strong>: transpiração excessiva, especialmente nas mãos, axilas e rosto, que gera ainda mais vergonha.</li>
-        <li><strong>Tremores</strong>: tremor das mãos, da voz ou do corpo inteiro ao se sentir observado.</li>
-        <li><strong>Rubor facial</strong>: o rosto fica vermelho de forma incontrolável, aumentando o constrangimento.</li>
-        <li><strong>Dificuldade para respirar</strong>: sensação de sufocamento ou falta de ar diante de situações de exposição.</li>
-        <li><strong>Boca seca</strong>: dificuldade para falar ou engolir devido à resposta de ansiedade.</li>
-        <li><strong>Náusea e desconforto abdominal</strong>: o estômago reage à ansiedade antecipatória.</li>
-      </ul>
-
-      <p>Esses <strong>sintomas físicos</strong> — <strong>taquicardia</strong>, <strong>sudorese</strong>, tremores, rubor e dificuldade respiratória — não são fraquezas nem exageros. São respostas neurofisiológicas reais do organismo diante de uma ameaça percebida pelo cérebro como genuinamente perigosa.</p>
-
-      <h2>A Distinção Entre Fobia Social e Timidez Não Patológica</h2>
-
-      <p>Compreender a <strong>distinção entre fobia social e timidez não patológica</strong> é essencial para buscar o tratamento adequado. A timidez não patológica se caracteriza por:</p>
-
-      <ul>
-        <li>Desconforto social que não impede a pessoa de participar de atividades importantes.</li>
-        <li>Capacidade de relaxar após o momento inicial de tensão em uma situação social.</li>
-        <li>Ausência de esquiva significativa ou de prejuízo funcional na vida cotidiana.</li>
-      </ul>
-
-      <p>Já a <strong>fobia social</strong> se diferencia pela intensidade do sofrimento e pelo impacto funcional:</p>
-
-      <ul>
-        <li>Medo intenso e persistente que dura meses ou anos.</li>
-        <li>Esquiva ativa de situações sociais, podendo levar ao isolamento.</li>
-        <li>Prejuízo significativo no trabalho, nos estudos e nos relacionamentos.</li>
-        <li>Ansiedade antecipatória que começa dias ou semanas antes do evento temido.</li>
-      </ul>
-
-      <p>A <strong>distinção entre fobia social e timidez não patológica</strong> nem sempre é óbvia para quem sofre. Muitas pessoas convivem com o transtorno por anos, acreditando ser "apenas timidez", enquanto sua vida vai se restringindo progressivamente.</p>
-
-      <h2>O Caminho do Tratamento</h2>
-
-      <p>A boa notícia é que a <strong>fobia social</strong> tem tratamento. A psicoterapia de base psicanalítica ajuda o paciente a investigar as raízes inconscientes do medo do julgamento — frequentemente ligadas a experiências de humilhação na infância ou a relações primárias onde o olhar do outro foi vivido como ameaçador.</p>
-
-      <p>Através do vínculo terapêutico seguro, o paciente pode gradually experimentar expor-se sem ser destruído, desconstruindo a crença profunda de que o julgamento alheio é fatal. Com tempo, coragem e o acompanhamento adequado, é possível recuperar a liberdade de existir socialmente sem o peso paralisante do medo.</p>
-
-      <hr/>
-      <h2>Perguntas Frequentes (FAQ)</h2>
-
-      <h3>Qual a diferença entre fobia social e timidez?</h3>
-      <p>A timidez é um traço de personalidade que não impede a pessoa de viver sua vida. A fobia social é um transtorno de ansiedade que causa sofrimento intenso e incapacitante, levando a pessoa a evitar situações sociais por medo do julgamento.</p>
-
-      <h3>A fobia social tem cura?</h3>
-      <p>Com o tratamento adequado, que inclui psicoterapia e, quando necessário, medicação, a pessoa com fobia social pode aprender a gerenciar a ansiedade e recuperar sua vida social de forma significativa.</p>
-
-      <h3>É normal sentir taquicardia antes de apresentações?</h3>
-      <p>Uma ansiedade leve antes de situações de exposição é comum. Porém, quando os sintomas físicos são intensos, recorrentes e levam à esquiva total da situação, pode ser um sinal de fobia social que merece atenção profissional.</p>
+      <p>Na <strong>fobia social</strong> ou <strong>timidez patológica</strong>, existe uma <strong>ansiedade excessiva</strong> diante de situações em que não há perigo real. O indivíduo sente um <strong>medo intenso</strong> de vivenciar situações que possam envolver a avaliação do outro. Frequentemente sofrem por antecipação, evitam situações sociais ou se esforçam para conseguir suportá-las, apresentam <strong>sintomas físicos</strong> como taquicardia, sudorese, cefaleia, tremor, diarreia entre outros. Existe uma fantasia de que está sendo observado o tempo todo. Sentem desconforto em comer em público, interagir com pessoas que não são familiares, medo de ofender alguém devido a sua fala ou comportamento. A busca por auxílio de um profissional pode ocorrer muito tarde ou quando tem a vida social muito prejudicada. A <strong>fobia social</strong> necessita de <strong>tratamento medicamentoso e terapêutico</strong> para que o indivíduo consiga lidar e elaborar seu sofrimento. <strong>Timidez</strong> é um comportamento não patológico. O indivíduo tímido precisa se sentir seguro para se expor, mas o relacionamento interpessoal tende a ser restrito, no sentido que não será a primeira pessoa que iniciará uma conversa ou compartilhará experiências vividas.</p>
     `,
   },
 ]
