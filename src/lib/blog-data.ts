@@ -243,41 +243,9 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     content: `
-      <p>Quando falamos em <strong>função materna</strong> no contexto da clínica psicanalítica, não estamos nos referindo ao gênero do terapeuta nem a uma substituição da mãe real do paciente. Trata-se de uma função psicológica fundamental: a de <strong>acolher o paciente sem julgamento</strong>, oferecendo um espaço seguro e continente para que o sofrimento possa ser expresso e transformado.</p>
-
-      <p>Essa noção tem raízes profundas na psicanálise. Winnicott, um dos grandes pensadores da teoria psicanalítica, descreveu a importância daquilo que ele chamou de "mothering" — a função de cuidado primário que oferece ao bebê um ambiente suficientemente bom para o seu desenvolvimento emocional. Na clínica, o analista opera de forma análoga.</p>
-
-      <h2>O Acolhimento Sem Julgamento</h2>
-
-      <p>O psicólogo, ao exercer essa <strong>função materna</strong>, disponibiliza-se a escutar tudo aquilo que o paciente traz — por mais doloroso, vergonhoso ou socialmente inaceitável que pareça — <strong>sem julgamento</strong>. É esse acolhimento incondicional que permite que conteúdos reprimidos e bloqueados comecem a encontrar palavras.</p>
-
-      <p>Muitos pacientes chegam à terapia carregando a_weight de anos de autocobrança, vergonha e medo de serem condenados por seus pensamentos e desejos. O simples ato de <strong>acolher o paciente sem julgamento</strong> já é, em si, profundamente terapêutico. Quando o sujeito percebe que pode ser autêntico sem ser rejeitado, algo se solta no interior da psique.</p>
-
-      <h2>A Função Materna Como Espaço Continente</h2>
-
-      <p>Na primeira infância, a figura materna saudável exerce a função de continente: recebe as angústias do bebê, processa-as e devolve-as de forma digerível. Na clínica, o psicólogo faz algo semelhante. Ele <strong>acolhe o paciente sem julgamento</strong>, recebe as dores mais profundas e ajuda a dar contorno e sentido àquilo que era pura angústia difusa.</p>
-
-      <p>Essa <strong>função materna</strong> não significa proteção excessiva ou complacência. Significa, antes de tudo, presença ética, escuta ativa e disponibilidade emocional para estar com o outro no momento de maior vulnerabilidade, sem fugir do desconforto.</p>
-
-      <h2>Quando a Função Materna Faltou</h2>
-
-      <p>Muitos dos pacientes que buscam terapia vivenciaram, em maior ou menor grau, uma falha nessa função materna original. Pode ter sido uma mãe fisicamente presente mas emocionalmente indisponível, ou um ambiente de cresça marcado pela negligência afetiva. O resultado são adultos que não aprenderam a acolher a si mesmos, que se julgam duramente e que têm imensa dificuldade de confiar no outro.</p>
-
-      <p>Nesses casos, a <strong>função materna</strong> exercida pelo psicólogo na clínica ganha uma importância ainda maior. Ao <strong>acolher o paciente sem julgamento</strong>, o terapeuta oferece uma experiência relacional corretiva. Não se trata de reparar o passado, mas de criar, no presente, as condições para que o paciente descubra que é possível existir e ser aceito como é.</p>
-
-      <p>Com o tempo e o trabalho analítico, o paciente internaliza essa função e passa, ele próprio, a conseguir <strong>acolher-se sem julgamento</strong>. Esse é um dos frutos mais preciosos da psicoterapia: a conquista da autonomia emocional e da capacidade de habitar a própria vida com mais leveza e autocompaixão.</p>
-
-      <hr/>
-      <h2>Perguntas Frequentes (FAQ)</h2>
-
-      <h3>O que significa "função materna" na psicoterapia?</h3>
-      <p>Não tem relação com o gênero do terapeuta. Refere-se à função psicológica de acolher, escutar sem julgamento e oferecer um ambiente seguro onde o paciente pode manifestar-se livremente, assim como uma boa figura materna faz na primeira infância.</p>
-
-      <h3>O terapeuta substitui a mãe do paciente?</h3>
-      <p>De forma alguma. O terapeuta exerce uma função temporária e ética de acolhimento. O objetivo é que o paciente, através dessa experiência relacional segura, desenvolva sua própria capacidade de se acolher e se cuidar de forma autônoma.</p>
-
-      <h3>Por que o acolhimento sem julgamento é tão importante?</h3>
-      <p>Porque grande parte do sofrimento psíquico vem do medo de ser julgado ou rejeitado. Quando o paciente percebe que pode falar qualquer coisa sem ser condenado, surgem as condições para que conteúdos reprimidos possam ser elaborados.</p>
+      <div style="text-align: center;">
+      <p>Muitas mulheres sonham em ser mães, mas esse desejo quando concretizado também traz muito <strong>medo e ansiedade</strong>. Seria muito importante ter uma preparação antes da maternidade, mas sabemos que não é a realidade de muitas mães. O corpo da mulher sofre muitas mudanças e ela adquire mais um papel na sociedade: o de mãe e responsável pelo cuidado do bebê. Com isso, vem as frustrações, dificuldades de lidar com a expectativa que criou de seu bebê e a necessidade de aceitar o bebê do jeito que ele é. A mãe se torna capaz dia após dia de fazer a leitura do que o bebê precisa em cada momento. Conforme o bebê vai recebendo um bom cuidado, vai adquirindo confiança para desenvolver sua autoestima, pensamento crítico e sua criatividade. A mãe é fundamental para a <strong>estruturação psíquica do bebê</strong>. No contexto clínico, o psicólogo também realiza uma <strong>função materna</strong>, pois <strong>acolhe o paciente de forma integral</strong>, <strong>ouvindo suas dores sem julgamento</strong>, compreendendo suas necessidades e contribuindo para que se torne autoconfiante, espontâneo e tenha relacionamentos interpessoais mais harmônicos.</p>
+      </div>
     `,
   },
   {
