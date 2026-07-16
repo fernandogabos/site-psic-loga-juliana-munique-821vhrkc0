@@ -19,7 +19,7 @@ export default function Blog() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-6 text-center">
             Blog & Artigos
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-center pr-[0px]">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-center mx-auto">
             Reflexões sobre psicanálise, saúde mental e os desafios da vida contemporânea.
           </p>
         </div>
