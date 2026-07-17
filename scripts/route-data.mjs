@@ -59,47 +59,8 @@ export const routes = [
   },
 
   {
-    path: '/blog/como-lidar-com-ansiedade-no-trabalho',
-    title: 'Ansiedade no Trabalho: Como Lidar | Juliana Munique',
-    description:
-      'Causas da ansiedade no trabalho, sintomas, estratégias de manejo e como a psicanálise pode ajudar.',
-    canonical: `${BASE_URL}/blog/como-lidar-com-ansiedade-no-trabalho`,
-    ogType: 'article',
-  },
-  {
-    path: '/blog/importancia-do-vinculo-terapeutico',
-    title: 'Vínculo Terapêutico: Por que Importa | Juliana Munique',
-    description:
-      'O vínculo terapêutico é fundamental para o processo de cura. Entenda como se desenvolve e por que escolher bem seu terapeuta.',
-    canonical: `${BASE_URL}/blog/importancia-do-vinculo-terapeutico`,
-    ogType: 'article',
-  },
-  {
-    path: '/blog/carencia-afetiva',
-    title: 'Carência Afetiva: Raízes Emocionais | Juliana Munique',
-    description:
-      'Entenda carência afetiva, suas origens na infância e como se manifesta em relacionamentos adultos.',
-    canonical: `${BASE_URL}/blog/carencia-afetiva`,
-    ogType: 'article',
-  },
-  {
-    path: '/blog/bloqueios-emocionais',
-    title: 'Bloqueios Emocionais: Como Superar | Juliana Munique',
-    description:
-      'O que são bloqueios emocionais, como o inconsciente os cria e como a psicoterapia psicanalítica trabalha para dissolvê-los.',
-    canonical: `${BASE_URL}/blog/bloqueios-emocionais`,
-    ogType: 'article',
-  },
-  {
-    path: '/blog/educacao-infantil',
-    title: 'Psicanálise e Educação Infantil | Juliana Munique',
-    description:
-      'A importância dos primeiros anos para o desenvolvimento emocional e o que os pais precisam saber sobre psicanálise infantil.',
-    canonical: `${BASE_URL}/blog/educacao-infantil`,
-    ogType: 'article',
-  },
-  {
     path: '/blog/quais-sao-suas-carencias',
+
     title: 'Quais são suas carências? | Juliana Munique',
     description:
       'Entenda a origem da carência afetiva, como ela se manifesta nos seus relacionamentos e por que a psicoterapia é o caminho para a autonomia emocional.',

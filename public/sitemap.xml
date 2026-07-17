@@ -36,29 +36,5 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://www.julianamunique.com.br/blog/como-lidar-com-ansiedade-no-trabalho</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.julianamunique.com.br/blog/importancia-do-vinculo-terapeutico</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.julianamunique.com.br/blog/carencia-afetiva</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.julianamunique.com.br/blog/bloqueios-emocionais</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.julianamunique.com.br/blog/educacao-infantil</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 </urlset>
+

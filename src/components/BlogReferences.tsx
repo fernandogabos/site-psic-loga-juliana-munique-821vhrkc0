@@ -23,22 +23,7 @@ const STANDARD_REFERENCES: ReferenceLink[] = [
   },
 ]
 
-const EXTRA_REFERENCES: Record<string, ReferenceLink[]> = {
-  'importancia-do-vinculo-terapeutico': [
-    {
-      label: 'Sociedade Brasileira de Psicanálise de São Paulo',
-      href: 'https://www.sbpsp.org.br/',
-      description: 'Referência em psicanálise no Brasil',
-    },
-  ],
-  'educacao-infantil': [
-    {
-      label: 'Associação Internacional de Psicanálise (IPA)',
-      href: 'https://www.ipa.world/',
-      description: 'Organização mundial de psicanálise',
-    },
-  ],
-}
+const EXTRA_REFERENCES: Record<string, ReferenceLink[]> = {}
 
 export function BlogReferences({ slug }: { slug: string }) {
   const extra = EXTRA_REFERENCES[slug] ?? []
