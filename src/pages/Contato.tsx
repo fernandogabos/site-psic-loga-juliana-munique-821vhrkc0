@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
+import { SEO, baseLocalBusinessSchema, basePersonSchema } from '@/components/SEO'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -27,7 +27,7 @@ export default function Contato() {
         title="Agende sua Consulta | Juliana Munique Jundiaí"
         description="Entre em contato com Juliana Munique. Consultório na Vila Arens, Jundiaí. Telefone: (11) 99570-3646. Seg–Sex 8h–20h, Sáb 8h–12h."
         canonicalUrl="/contato"
-        schema={baseLocalBusinessSchema}
+        schema={[baseLocalBusinessSchema, basePersonSchema]}
       />
 
       <div className="bg-muted pt-8 pb-16">

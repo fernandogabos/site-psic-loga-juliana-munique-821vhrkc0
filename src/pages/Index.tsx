@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/accordion'
 import { SEO, baseLocalBusinessSchema, basePersonSchema } from '@/components/SEO'
 import { TestimonialsSection } from '@/components/Testimonials'
+import { FAQPageSchema } from '@/lib/seo-schemas'
 
 export default function Index() {
   return (
@@ -17,7 +18,7 @@ export default function Index() {
         title="Psicanalista em Jundiaí | Juliana Munique"
         description="Juliana Munique, psicanalista em Jundiaí com mais de 13 anos de experience. Atendimento para adultos e adolescentes. Agende sua conversa."
         canonicalUrl="/"
-        schema={[baseLocalBusinessSchema, basePersonSchema]}
+        schema={[baseLocalBusinessSchema, basePersonSchema, FAQPageSchema()]}
       />
 
       <section className="relative overflow-hidden" style={{ backgroundColor: '#8a674e' }}>

@@ -6,27 +6,58 @@ export const BASE_URL = 'https://www.julianamunique.com.br'
 export const basePersonSchema = {
   '@type': 'Person',
   name: 'Juliana Munique',
-  jobTitle: 'Psicóloga clínica especialista em psicanálise em Jundiaí',
+  jobTitle: 'Psicanalista',
+  description: 'Psicanalista com CRP 06/106345, membro da SBPCamp, atuando desde 2011.',
   url: BASE_URL,
   identifier: 'CRP 06/106345',
   sameAs: [
     'https://www.instagram.com/julianamunique',
     'https://www.linkedin.com/in/julianamunique',
+    'https://www.julianamunique.com.br/sobre',
   ],
 }
 
 export const baseLocalBusinessSchema = {
-  '@type': 'LocalBusiness',
-  name: 'Juliana Munique - Psicóloga',
+  '@type': ['LocalBusiness', 'MedicalBusiness'],
+  name: 'Juliana Munique Psicanalista',
+  description:
+    'Psicoterapia psicanalítica para adultos e adolescentes em Jundiaí, SP. CRP 06/106345.',
   image: 'https://img.usecurling.com/p/800/600?q=therapy&color=brown',
   url: BASE_URL,
-  telephone: '+5511995703646',
+  telephone: '+55-11-99570-3646',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Rua Moreira César, 319, Vila Arens II',
+    streetAddress: 'Rua Moreira César, 319',
     addressLocality: 'Jundiaí',
     addressRegion: 'SP',
+    postalCode: '13208-080',
     addressCountry: 'BR',
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '20:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Saturday'],
+      opens: '08:00',
+      closes: '12:00',
+    },
+  ],
+  founder: {
+    '@type': 'Person',
+    name: 'Juliana Munique',
+    jobTitle: 'Psicanalista',
+    description: 'Psicanalista com CRP 06/106345, membro da SBPCamp, atuando desde 2011.',
+    sameAs: ['https://www.julianamunique.com.br/sobre'],
+  },
+  priceRange: '$$',
+  serviceArea: {
+    '@type': 'City',
+    name: 'Jundiaí',
   },
   sameAs: [
     'https://www.instagram.com/julianamunique',

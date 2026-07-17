@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, baseLocalBusinessSchema } from '@/components/SEO'
+import { HowToSchema } from '@/lib/seo-schemas'
 import { Button } from '@/components/ui/button'
 import { Calendar, MessageSquare, Heart, Clock } from 'lucide-react'
 
@@ -38,7 +39,7 @@ export default function ComoFunciona() {
         title="Como Funciona a Psicanálise | Juliana Munique"
         description="Entenda como funciona o processo psicanalítico com Juliana Munique. Consultas presenciais e online. Primeira conversa sem compromisso."
         canonicalUrl="/como-funciona"
-        schema={baseLocalBusinessSchema}
+        schema={[baseLocalBusinessSchema, HowToSchema()]}
       />
 
       <div className="bg-muted pt-8 pb-16">
