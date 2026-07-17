@@ -1,82 +1,160 @@
+#!/usr/bin/env node
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { routes, BASE_URL } from './route-data.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const distDir = path.join(__dirname, '..', process.argv[2] || 'dist')
 
-const dirArg = process.argv.find((a) => a.startsWith('--dir='))
-const distDir = dirArg ? dirArg.split('=')[1] : 'dist'
-const DIST_PATH = path.resolve(__dirname, '..', distDir)
-const templatePath = path.join(DIST_PATH, 'index.html')
-
-if (!fs.existsSync(templatePath)) {
-  console.error(`[prerender] Template not found: ${templatePath}`)
-  process.exit(1)
-}
-
-const template = fs.readFileSync(templatePath, 'utf-8')
-
-function escapeAttr(str) {
-  return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;')
-}
-
-function setMeta(html, attr, name, content) {
-  const escaped = escapeAttr(content)
-  const newTag = `<meta ${attr}="${name}" content="${escaped}" />`
-  const regex = new RegExp(`<meta\\s+${attr}="${name}"[^>]*>`, 'i')
-  if (regex.test(html)) {
-    return html.replace(regex, newTag)
+const routes = [
+  {
+    path: '/',
+    title: 'Psicanalista em Jundiaí | Juliana Munique',
+    description: 'Juliana Munique, psicanalista em Jundiaí com mais de 13 anos de experiência. Atendimento para adultos e adolescentes. Agende sua conversa.',
+    canonical: 'https://www.julianamunique.com.br/'
+  },
+  {
+    path: '/sobre',
+    title: 'Sobre Juliana Munique | Psicanalista CRP 06/106345',
+    description: 'Conheça Juliana Munique, psicanalista com CRP 06/106345, membro da SBPCamp e mais de uma década dedicada à escuta psicanalítica em Jundiaí.',
+    canonical: 'https://www.julianamunique.com.br/sobre'
+  },
+  {
+    path: '/adultos',
+    title: 'Psicoterapia para Adultos em Jundiaí | Juliana Munique',
+    description: 'Psicoterapia psicanalítica para adultos em Jundiaí. Tratamento de ansiedade, depressão, angústia e questões relacionais. Agende sua consulta.',
+    canonical: 'https://www.julianamunique.com.br/adultos'
+  },
+  {
+    path: '/adolescentes',
+    title: 'Psicoterapia para Adolescentes | Juliana Munique',
+    description: 'Psicoterapia especializada para adolescentes em Jundiaí. Ambiente seguro para explorar emoções e desafios da adolescência com Juliana Munique.',
+    canonical: 'https://www.julianamunique.com.br/adolescentes'
+  },
+  {
+    path: '/como-funciona',
+    title: 'Como Funciona a Psicanálise | Juliana Munique',
+    description: 'Entenda como funciona o processo psicanalítico com Juliana Munique. Consultas presenciais e online. Primeira conversa sem compromisso.',
+    canonical: 'https://www.julianamunique.com.br/como-funciona'
+  },
+  {
+    path: '/contato',
+    title: 'Agende sua Consulta | Juliana Munique Jundiaí',
+    description: 'Entre em contato com Juliana Munique. Consultório na Vila Arens, Jundiaí. Telefone: (11) 99570-3646. Seg–Sex 8h–20h, Sáb 8h–12h.',
+    canonical: 'https://www.julianamunique.com.br/contato'
+  },
+  {
+    path: '/blog',
+    title: 'Blog sobre Saúde Mental | Juliana Munique',
+    description: 'Artigos sobre saúde mental, psicanálise e autoconhecimento por Juliana Munique, psicanalista em Jundiaí.',
+    canonical: 'https://www.julianamunique.com.br/blog'
+  },
+  {
+    path: '/blog/o-que-e-psicoterapia-psicanalitica',
+    title: 'O que é Psicoterapia Psicanalítica | Juliana Munique',
+    description: 'Entenda o que é psicoterapia psicanalítica, sua origem freudiana e como o processo terapêutico funciona na prática.',
+    canonical: 'https://www.julianamunique.com.br/blog/o-que-e-psicoterapia-psicanalitica'
+  },
+  {
+    path: '/blog/como-lidar-com-ansiedade-no-trabalho',
+    title: 'Ansiedade no Trabalho: Como Lidar | Juliana Munique',
+    description: 'Causas da ansiedade no trabalho, sintomas, estratégias de manejo e como a psicanálise pode ajudar.',
+    canonical: 'https://www.julianamunique.com.br/blog/como-lidar-com-ansiedade-no-trabalho'
+  },
+  {
+    path: '/blog/importancia-do-vinculo-terapeutico',
+    title: 'Vínculo Terapêutico: Por que Importa | Juliana Munique',
+    description: 'O vínculo terapêutico é fundamental para o processo de cura. Entenda como se desenvolve e por que escolher bem seu terapeuta.',
+    canonical: 'https://www.julianamunique.com.br/blog/importancia-do-vinculo-terapeutico'
+  },
+  {
+    path: '/blog/carencia-afetiva',
+    title: 'Carência Afetiva: Raízes Emocionais | Juliana Munique',
+    description: 'Entenda carência afetiva, suas origens na infância e como se manifesta em relacionamentos adultos.',
+    canonical: 'https://www.julianamunique.com.br/blog/carencia-afetiva'
+  },
+  {
+    path: '/blog/bloqueios-emocionais',
+    title: 'Bloqueios Emocionais: Como Superar | Juliana Munique',
+    description: 'O que são bloqueios emocionais, como o inconsciente os cria e como a psicoterapia psicanalítica trabalha para dissolvê-los.',
+    canonical: 'https://www.julianamunique.com.br/blog/bloqueios-emocionais'
+  },
+  {
+    path: '/blog/educacao-infantil',
+    title: 'Psicanálise e Educação Infantil | Juliana Munique',
+    description: 'A importância dos primeiros anos para o desenvolvimento emocional e o que os pais precisam saber sobre psicanálise infantil.',
+    canonical: 'https://www.julianamunique.com.br/blog/educacao-infantil'
   }
-  return html.replace('</head>', `  ${newTag}\n</head>`)
+]
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function setMetaContent(html, attr, attrValue, content) {
+  const escapedValue = escapeRegExp(attrValue)
+  const re1 = new RegExp(
+    `(<meta[^>]*${attr}="${escapedValue}"[^>]*content=")([^"]*)("[^>]*>)`,
+    'i'
+  )
+  let result = html.replace(re1, `$1${content}$3`)
+  if (result !== html) return result
+
+  const re2 = new RegExp(
+    `(<meta[^>]*content=")([^"]*)("[^>]*${attr}="${escapedValue}"[^>]*>)`,
+    'i'
+  )
+  result = html.replace(re2, `$1${content}$3`)
+  if (result !== html) return result
+
+  const tag = `  <meta ${attr}="${attrValue}" content="${content}" />\n`
+  return html.replace(/<\/head>/i, `${tag}</head>`)
 }
 
 function setTitle(html, title) {
-  return html.replace(/<title>[^<]*<\/title>/, `<title>${escapeAttr(title)}</title>`)
+  return html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${title}</title>`)
 }
 
 function setCanonical(html, url) {
-  const newTag = `<link rel="canonical" href="${escapeAttr(url)}" />`
-  const regex = /<link\s+rel="canonical"[^>]*>/i
-  if (regex.test(html)) {
-    return html.replace(regex, newTag)
-  }
-  return html.replace('</head>', `  ${newTag}\n</head>`)
+  const re1 = /(<link[^>]*rel="canonical"[^>]*href=")([^"]*)("[^>]*>)/i
+  let result = html.replace(re1, `$1${url}$3`)
+  if (result !== html) return result
+
+  const re2 = /(<link[^>]*href=")([^"]*)("[^>]*rel="canonical"[^>]*>)/i
+  result = html.replace(re2, `$1${url}$3`)
+  if (result !== html) return result
+
+  const tag = `  <link rel="canonical" href="${url}" />\n`
+  return html.replace(/<\/head>/i, `${tag}</head>`)
 }
 
-function generateHtml(route) {
-  let html = template
-  const url = `${BASE_URL}${route.path === '/' ? '/' : route.path}`
-  const ogImage = `${BASE_URL}/og-image.jpeg`
+const baseHtmlPath = path.join(distDir, 'index.html')
 
+if (!fs.existsSync(baseHtmlPath)) {
+  console.error('Error: dist/index.html not found. Run "vite build" first.')
+  process.exit(1)
+}
+
+const baseHtml = fs.readFileSync(baseHtmlPath, 'utf-8')
+
+let count = 0
+for (const route of routes) {
+  let html = baseHtml
   html = setTitle(html, route.title)
-  html = setMeta(html, 'name', 'description', route.description)
-  html = setMeta(html, 'name', 'author', 'Juliana Munique')
-  html = setMeta(html, 'name', 'robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1')
-  html = setCanonical(html, url)
-  html = setMeta(html, 'property', 'og:title', route.title)
-  html = setMeta(html, 'property', 'og:description', route.description)
-  html = setMeta(html, 'property', 'og:url', url)
-  html = setMeta(html, 'property', 'og:type', route.ogType || 'website')
-  html = setMeta(html, 'property', 'og:image', ogImage)
-  html = setMeta(html, 'property', 'og:locale', 'pt_BR')
-  html = setMeta(html, 'name', 'twitter:card', 'summary_large_image')
-  html = setMeta(html, 'name', 'twitter:title', route.title)
-  html = setMeta(html, 'name', 'twitter:description', route.description)
-  html = setMeta(html, 'name', 'twitter:image', ogImage)
+  html = setMetaContent(html, 'name', 'description', route.description)
+  html = setCanonical(html, route.canonical)
+  html = setMetaContent(html, 'property', 'og:title', route.title)
+  html = setMetaContent(html, 'property', 'og:description', route.description)
+  html = setMetaContent(html, 'property', 'og:url', route.canonical)
 
-  return html
+  const outputPath =
+    route.path === '/'
+      ? path.join(distDir, 'index.html')
+      : path.join(distDir, route.path, 'index.html')
+
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true })
+  fs.writeFileSync(outputPath, html)
+  count++
 }
 
-function writeRoute(route) {
-  const html = generateHtml(route)
-  const urlPath = route.path === '/' ? '' : route.path
-  const dir = path.join(DIST_PATH, urlPath)
-  fs.mkdirSync(dir, { recursive: true })
-  fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf-8')
-  console.log(`[prerender] Generated: ${route.path}`)
-}
-
-console.log(`[prerender] Starting pre-rendering for ${routes.length} routes...`)
-routes.forEach(writeRoute)
-console.log(`[prerender] Done! ${routes.length} static HTML files generated in ${distDir}/.`)
+console.log(`Prerendered ${count} static HTML files`)
