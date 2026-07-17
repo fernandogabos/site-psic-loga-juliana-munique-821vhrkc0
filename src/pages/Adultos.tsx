@@ -8,8 +8,8 @@ export default function Adultos() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Terapia para Adultos Jundiaí | Psicoterapia e Psicanálise"
-        description="Terapia para adultos Jundiaí focada em autoconhecimento, depressão, estresse e ansiedade. Psicoterapia em Jundiaí na Vila Arens ou formato online."
+        title="Psicoterapia para Adultos em Jundiaí | Juliana Munique"
+        description="Psicoterapia psicanalítica para adultos em Jundiaí. Tratamento de ansiedade, depressão, angústia e questões relacionais. Agende sua consulta."
         canonicalUrl="/adultos"
         schema={baseLocalBusinessSchema}
       />

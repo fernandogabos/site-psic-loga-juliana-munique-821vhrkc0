@@ -24,8 +24,8 @@ export default function Contato() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contato | Psicóloga em Jundiaí - Juliana Munique"
-        description="Entre em contato para agendar sua consulta. Atendimento presencial em Jundiaí (Vila Arens) e online para todo o Brasil."
+        title="Agende sua Consulta | Juliana Munique Jundiaí"
+        description="Entre em contato com Juliana Munique. Consultório na Vila Arens, Jundiaí. Telefone: (11) 99570-3646. Seg–Sex 8h–20h, Sáb 8h–12h."
         canonicalUrl="/contato"
         schema={baseLocalBusinessSchema}
       />

@@ -10,8 +10,8 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Blog sobre Psicologia | Psicóloga em Jundiaí"
-        description="Artigos e reflexões de Juliana Munique, psicóloga em Jundiaí. Textos sobre saúde mental, psicanálise, carência afetiva e ansiedade."
+        title="Blog sobre Saúde Mental | Juliana Munique"
+        description="Artigos sobre saúde mental, psicanálise e autoconhecimento por Juliana Munique, psicanalista em Jundiaí. Leitura para quem quer se compreender."
         canonicalUrl="/blog"
         schema={basePersonSchema}
       />

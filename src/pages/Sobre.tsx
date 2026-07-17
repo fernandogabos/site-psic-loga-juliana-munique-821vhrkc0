@@ -6,8 +6,8 @@ export default function Sobre() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Sobre Mim | Psicóloga Jundiaí | Psicanálise"
-        description="Juliana Munique (CRP 06/106345), Psicóloga Jundiaí especializada em psicanálise. Conheça a trajetória e abordagem no cuidado em saúde mental."
+        title="Sobre Juliana Munique | Psicanalista CRP 06/106345"
+        description="Conheça Juliana Munique, psicanalista com CRP 06/106345, membro da SBPCamp e mais de uma década dedicada à escuta psicanalítica em Jundiaí."
         canonicalUrl="/sobre"
         schema={{
           ...basePersonSchema,

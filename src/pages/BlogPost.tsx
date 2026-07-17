@@ -37,7 +37,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${post.title} | Blog da Psicóloga Juliana Munique`}
+        title={post.seoTitle || `${post.title} | Juliana Munique`}
         description={post.excerpt}
         canonicalUrl={`/blog/${post.slug}`}
         schema={schema}

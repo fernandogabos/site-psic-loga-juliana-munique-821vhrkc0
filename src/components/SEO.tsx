@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-export const BASE_URL = 'https://julianamunique.com.br'
+export const BASE_URL = 'https://www.julianamunique.com.br'
 
 export const basePersonSchema = {
   '@type': 'Person',
@@ -54,7 +54,7 @@ export function SEO({
   const location = useLocation()
 
   useEffect(() => {
-    const finalTitle = `${title} | Juliana Munique - Psicóloga`
+    const finalTitle = title
     document.title = finalTitle
 
     const currentUrl = `${BASE_URL}${canonicalUrl || location.pathname}`
@@ -62,6 +62,7 @@ export function SEO({
     const finalImage = ogImage || defaultImage
 
     const metaTags: Record<string, string> = {
+      author: 'Juliana Munique',
       description: description,
       'og:title': finalTitle,
       'og:description': description,

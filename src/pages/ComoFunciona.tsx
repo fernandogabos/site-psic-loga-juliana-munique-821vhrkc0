@@ -35,8 +35,8 @@ export default function ComoFunciona() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Como Funciona a Psicoterapia | Psicóloga em Jundiaí"
-        description="Entenda como funciona o processo terapêutico: primeira sessão, formato das consultas, frequência e duração do tratamento."
+        title="Como Funciona a Psicanálise | Juliana Munique"
+        description="Entenda como funciona o processo psicanalítico com Juliana Munique. Consultas presenciais e online. Primeira conversa sem compromisso."
         canonicalUrl="/como-funciona"
         schema={baseLocalBusinessSchema}
       />

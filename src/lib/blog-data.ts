@@ -10,6 +10,7 @@ export const AUTHOR_PORTRAIT_URL =
 export interface BlogPost {
   slug: string
   title: string
+  seoTitle?: string
   excerpt: string
   content: string
   date: string
@@ -199,6 +200,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'o-que-e-psicoterapia-psicanalitica',
     title: 'O que é Psicoterapia Psicanalítica?',
+    seoTitle: 'O que é Psicoterapia Psicanalítica | Juliana Munique',
     excerpt:
       'Descubra o que é a psicoterapia psicanalítica, suas origens em Freud, como funciona o processo terapêutico e os benefícios de um tratamento que investiga o inconsciente.',
     date: '10/03/2025',
@@ -239,6 +241,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'como-lidar-com-ansiedade-no-trabalho',
     title: 'Como Lidar com a Ansiedade no Trabalho',
+    seoTitle: 'Ansiedade no Trabalho: Como Lidar | Juliana Munique',
     excerpt:
       'Identifique as causas da ansiedade no ambiente profissional, reconheça os sintomas físicos e emocionais e descubra estratégias e tratamento para recuperar o equilíbrio.',
     date: '25/03/2025',
@@ -279,6 +282,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'importancia-do-vinculo-terapeutico',
     title: 'A Importância do Vínculo Terapêutico',
+    seoTitle: 'Vínculo Terapêutico: Por que Importa | Juliana Munique',
     excerpt:
       'Entenda por que o vínculo terapêutico é essencial para o sucesso do tratamento psicológico, como ele se desenvolve e o papel da transferência na psicanálise.',
     date: '08/04/2025',
@@ -319,6 +323,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'carencia-afetiva',
     title: 'Carência Afetiva: Entendendo as Raízes Emocionais',
+    seoTitle: 'Carência Afetiva: Raízes Emocionais | Juliana Munique',
     excerpt:
       'Compreenda as origens da carência afetiva na infância, como ela se manifesta nos relacionamentos adultos e como a psicanálise pode ajudar a superar a dependência emocional.',
     date: '22/04/2025',
@@ -359,6 +364,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'bloqueios-emocionais',
     title: 'Bloqueios Emocionais: Como Identificar e Superar',
+    seoTitle: 'Bloqueios Emocionais: Como Superar | Juliana Munique',
     excerpt:
       'Reconheça os sinais dos bloqueios emocionais, entenda como eles funcionam como mecanismos de defesa inconscientes e descubra como a terapia ajuda a superá-los.',
     date: '05/05/2025',
@@ -399,6 +405,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'educacao-infantil',
     title: 'Psicanálise e Educação Infantil: O que os Pais Precisam Saber',
+    seoTitle: 'Psicanálise e Educação Infantil | Juliana Munique',
     excerpt:
       'Descubra a importância da primeira infância para a estruturação psíquica, o impacto de traumas precoces e como a psicanálise pode orientar a parentalidade.',
     date: '20/05/2025',

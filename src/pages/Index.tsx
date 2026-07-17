@@ -14,8 +14,8 @@ export default function Index() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO
-        title="Psicóloga em Jundiaí e Online | Psicoterapia Psicanalítica"
-        description="Juliana Munique é Psicóloga em Jundiaí (Vila Arens) e oferece psicoterapia online. Psicanálise e terapia para adultos e adolescentes. Agende sua consulta."
+        title="Psicanalista em Jundiaí | Juliana Munique"
+        description="Juliana Munique, psicanalista em Jundiaí com mais de 13 anos de experience. Atendimento para adultos e adolescentes. Agende sua conversa."
         canonicalUrl="/"
         schema={[baseLocalBusinessSchema, basePersonSchema]}
       />

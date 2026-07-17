@@ -19,4 +19,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://julianamunique.com.br/sitemap.xml
+Sitemap: https://www.julianamunique.com.br/sitemap.xml

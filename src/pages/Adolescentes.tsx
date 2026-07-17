@@ -8,8 +8,8 @@ export default function Adolescentes() {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Psicóloga para Adolescentes Jundiaí | Terapia para Ansiedade"
-        description="Busca psicóloga para adolescentes Jundiaí? Terapia especializada para ansiedade, transição e conflitos através da psicanálise. Atendimento presencial e online."
+        title="Psicoterapia para Adolescentes | Juliana Munique"
+        description="Psicoterapia especializada para adolescentes em Jundiaí. Ambiente seguro para explorar emoções e desafios da adolescência com Juliana Munique."
         canonicalUrl="/adolescentes"
         schema={baseLocalBusinessSchema}
       />
