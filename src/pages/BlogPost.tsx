@@ -1,9 +1,9 @@
 import { Link, useParams } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, BASE_URL } from '@/components/SEO'
-import { blogPosts, AUTHOR_PORTRAIT_URL } from '@/lib/blog-data'
+import { blogPosts, AUTHOR_PORTRAIT_URL, getReadingTime } from '@/lib/blog-data'
 import { BlogPostSchema } from '@/lib/seo-schemas'
-import { ArrowLeft, Calendar, Tag } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react'
 import educarImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
 import carenciaImage from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_CARENCIA.png'
 
@@ -66,6 +66,10 @@ export default function BlogPost() {
           <span className="flex items-center gap-2">
             <Tag className="w-4 h-4" />
             {post.category}
+          </span>
+          <span className="flex items-center gap-2">
+            <Clock className="w-4 h-4" />
+            {getReadingTime(post.content)} min de leitura
           </span>
         </div>
 

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { SEO, basePersonSchema } from '@/components/SEO'
-import { blogPosts } from '@/lib/blog-data'
+import { blogPosts, getReadingTime } from '@/lib/blog-data'
 import bloqueiosEmocionaisImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_BLOQUEIOS EMOCIONAIS.png'
 import educarImg from '@/assets/JULIANA MUNIQUE_PSICANALISTA_JUNDIAI_EDUCAR E DIFICIL.png'
+import { Clock } from 'lucide-react'
 
 export default function Blog() {
   return (
@@ -59,6 +60,11 @@ export default function Blog() {
                     <span className="text-primary">{post.category}</span>
                     <span aria-hidden="true">•</span>
                     <span>{post.date}</span>
+                    <span aria-hidden="true">•</span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      {getReadingTime(post.content)} min
+                    </span>
                   </div>
                   <h2 className="text-2xl font-serif font-bold text-primary mb-4 group-hover:text-foreground transition-colors line-clamp-2 leading-snug">
                     <Link
