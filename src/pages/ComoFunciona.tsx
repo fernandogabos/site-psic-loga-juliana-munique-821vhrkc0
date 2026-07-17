@@ -59,7 +59,7 @@ export default function ComoFunciona() {
 
       <div className="container mx-auto px-4 md:px-6 py-16 max-w-5xl">
         <img
-          src="https://img.usecurling.com/p/1200/500?q=therapy%20session&color=brown"
+          src="/visual-edits/juliana-munique-psicanalista-jundiai-terapia-379cc64a.png"
           alt="Ambiente acolhedor de consultório psicológico"
           className="w-full h-80 md:h-[400px] object-cover rounded-3xl shadow-lg mb-16"
         />
