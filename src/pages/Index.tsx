@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/accordion'
 import { SEO, baseLocalBusinessSchema, basePersonSchema } from '@/components/SEO'
 import { TestimonialsSection } from '@/components/Testimonials'
-import { FAQPageSchema } from '@/lib/seo-schemas'
+import { FAQPageSchema, SpeakableSpecificationSchema } from '@/lib/seo-schemas'
 
 export default function Index() {
   return (
@@ -18,7 +18,12 @@ export default function Index() {
         title="Psicanalista em Jundiaí | Juliana Munique"
         description="Juliana Munique, psicanalista em Jundiaí com mais de 13 anos de experience. Atendimento para adultos e adolescentes. Agende sua conversa."
         canonicalUrl="/"
-        schema={[baseLocalBusinessSchema, basePersonSchema, FAQPageSchema()]}
+        schema={[
+          baseLocalBusinessSchema,
+          basePersonSchema,
+          FAQPageSchema(),
+          SpeakableSpecificationSchema(),
+        ]}
       />
 
       <section className="relative overflow-hidden" style={{ backgroundColor: '#8a674e' }}>
@@ -163,7 +168,7 @@ export default function Index() {
 
       <TestimonialsSection className="bg-muted" />
 
-      <section className="py-24 bg-primary text-primary-foreground rounded-t-[3rem]">
+      <section id="faq" className="py-24 bg-primary text-primary-foreground rounded-t-[3rem]">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Perguntas Frequentes</h2>

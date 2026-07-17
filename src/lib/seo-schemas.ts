@@ -56,6 +56,25 @@ export function FAQPageSchema() {
   }
 }
 
+export function BreadcrumbListSchema(items: { name: string; url: string }[]) {
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  }
+}
+
+export function SpeakableSpecificationSchema() {
+  return {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '#faq'],
+  }
+}
+
 export function HowToSchema() {
   return {
     '@type': 'HowTo',
