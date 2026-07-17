@@ -125,7 +125,12 @@ export function Footer() {
               reservados.
             </p>
           </div>
-          <p>CRP 06/106345</p>
+          <p>
+            CRP 06/106345
+            <div>
+              <br />
+            </div>
+          </p>
         </div>
       </div>
     </footer>
