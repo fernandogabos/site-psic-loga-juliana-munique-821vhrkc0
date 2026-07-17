@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, MapPin, Phone } from 'lucide-react'
+import { Instagram, MapPin, Phone, MessageCircle, BadgeCheck } from 'lucide-react'
 import innovaLogo from '@/assets/innovalogobrancotransparente-dd874.png'
 
 export function Footer() {
@@ -85,13 +85,31 @@ export function Footer() {
             <h4 className="font-serif font-bold text-lg text-primary-foreground">Conecte-se</h4>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/psi.jumunique?igsh=bHI3eGxpcmNnZW5y"
+                href="https://www.instagram.com/julianamunique.psicanalista/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
+              </a>
+              <a
+                href="https://wa.me/5511995703646"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle className="h-5 w-5" aria-hidden="true" />
+              </a>
+              <a
+                href="https://cadastro.cfp.org.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-[44px] w-[44px] rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-background hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary transition-all"
+                aria-label="Verificar CRP 06/106345"
+              >
+                <BadgeCheck className="h-5 w-5" aria-hidden="true" />
               </a>
             </div>
             <div className="pt-4">
@@ -125,12 +143,14 @@ export function Footer() {
               reservados.
             </p>
           </div>
-          <p>
+          <a
+            href="https://cadastro.cfp.org.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded-sm px-2 py-1"
+          >
             CRP 06/106345
-            <div>
-              <br />
-            </div>
-          </p>
+          </a>
         </div>
       </div>
     </footer>
