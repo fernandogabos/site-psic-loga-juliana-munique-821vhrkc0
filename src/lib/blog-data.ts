@@ -197,47 +197,7 @@ export const blogPosts: BlogPost[] = [
       <p>Na <strong>fobia social</strong> ou <strong>timidez patológica</strong>, existe uma <strong>ansiedade excessiva</strong> diante de situações em que não há perigo real. O indivíduo sente um <strong>medo intenso</strong> de vivenciar situações que possam envolver a avaliação do outro. Frequentemente sofrem por antecipação, evitam situações sociais ou se esforçam para conseguir suportá-las, apresentam <strong>sintomas físicos</strong> como taquicardia, sudorese, cefaleia, tremor, diarreia entre outros. Existe uma fantasia de que está sendo observado o tempo todo. Sentem desconforto em comer em público, interagir com pessoas que não são familiares, medo de ofender alguém devido a sua fala ou comportamento. A busca por auxílio de um profissional pode ocorrer muito tarde ou quando tem a vida social muito prejudicada. A <strong>fobia social</strong> necessita de <strong>tratamento medicamentoso e terapêutico</strong> para que o indivíduo consiga lidar e elaborar seu sofrimento. <strong>Timidez</strong> é um comportamento não patológico. O indivíduo tímido precisa se sentir seguro para se expor, mas o relacionamento interpessoal tende a ser restrito, no sentido que não será a primeira pessoa que iniciará uma conversa ou compartilhará experiências vividas.</p>
     `,
   },
-  {
-    slug: 'o-que-e-psicoterapia-psicanalitica',
-    title: 'O que é Psicoterapia Psicanalítica?',
-    seoTitle: 'O que é Psicoterapia Psicanalítica | Juliana Munique',
-    excerpt:
-      'Descubra o que é a psicoterapia psicanalítica, suas origens em Freud, como funciona o processo terapêutico e os benefícios de um tratamento que investiga o inconsciente.',
-    date: '10 de março de 2025',
-    dateIso: '2025-03-10T08:00:00Z',
-    category: 'Psicanálise',
-    imageUrl: 'https://img.usecurling.com/p/800/500?q=psychoanalysis%20therapy&color=blue',
-    faqs: [
-      {
-        question: 'Qual a diferença entre psicanálise e outras abordagens terapêuticas?',
-        answer:
-          'Enquanto muitas abordagens focam na remissão rápida de sintomas, a psicanálise investiga as raízes inconscientes dos sofrimentos, promovendo transformações estruturais e duradouras na personalidade do sujeito.',
-      },
-      {
-        question: 'É necessário usar o divã na psicoterapia psicanalítica?',
-        answer:
-          'O uso do divã não é obrigatório. Ele é uma ferramenta que facilita o acesso a conteúdos inconscientes, mas a decisão de utilizá-lo é feita em conjunto pelo terapeuta e o paciente, respeitando o momento do tratamento.',
-      },
-      {
-        question: 'Quanto tempo dura um tratamento psicanalítico?',
-        answer:
-          'Não há um prazo fixo. A duração depende dos objetivos do paciente, da complexidade dos conflitos e do ritmo de cada pessoa. O processo é profundo e contínuo, promovendo mudanças que perduram ao longo da vida.',
-      },
-    ],
-    content: `
-      <p>A <strong>psicoterapia psicanalítica</strong> é uma modalidade de tratamento psicológico fundamentada na <strong>psicanálise</strong>, teoria desenvolvida por <strong>Sigmund Freud</strong> no final do século XIX. Ao contrário de abordagens que se concentram apenas na eliminação de sintomas, a psicanálise propõe uma investigação profunda do <strong>inconsciente</strong>, buscando compreender as raízes dos sofrimentos psíquicos e os padrões que se repetem ao longo da vida do sujeito.</p>
 
-      <p><strong>Origens freudianas</strong>: Freud, através de sua clínica com pacientes que apresentavam sintomas sem causa orgânica, descobriu que muitos sofrimentos tinham origem em conflitos emocionais não resolvidos, muitos dos quais remontavam à primeira infância. Ele constatou que o ser humano é movido por desejos, pulsões e medos que, em grande parte, não estão acessíveis à consciência. A partir dessas descobertas, desenvolveu métodos como a <strong>associação livre</strong>, a <strong>análise dos sonhos</strong> e a interpretação dos <strong>atos falhos</strong>, instrumentos que permitem acessar o conteúdo do inconsciente e trazer à luz aquilo que estava recalcado.</p>
-
-      <p><strong>O processo terapêutico</strong>: Na psicoterapia psicanalítica, o paciente é convidado a falar livremente sobre seus pensamentos, sentimentos, memórias e sonhos, sem censura ou julgamento. O terapeuta escuta atentamente e, em momentos oportunos, oferece interpretações que ajudam o paciente a perceber conexões até então inconscientes entre experiências passadas e comportamentos atuais. O <strong>setting terapêutico</strong> — com o uso do <strong>divã</strong> em muitos casos — favorece o recolhimento interno, facilitando o acesso a conteúdos profundos da psique que normalmente permanecem ocultos.</p>
-
-      <p><strong>A relação entre inconsciente e sintomas</strong>: Segundo a psicanálise, os sintomas — sejam eles ansiedade, depressão, compulsões, bloqueios emocionais ou dificuldades nos relacionamentos — não são meros problemas a serem removidos, mas <strong>manifestações de um conflito inconsciente</strong>. Eles carregam um significado e exercem uma função psíquica. Ao compreender o que o sintoma está comunicando, o paciente pode <strong>elaborar</strong> seus conflitos, abrindo espaço para transformações genuínas. O sintoma é compreendido como uma <strong>formação de compromisso</strong> entre desejos que foram reprimidos e as defesas psíquicas que o ego mobiliza.</p>
-
-      <p><strong>Benefícios do tratamento</strong>: A psicoterapia psicanalítica oferece inúmeros benefícios. Ela promove o <strong>autoconhecimento</strong>, permitindo que o indivíduo compreenda os determinantes inconscientes de suas escolhas e comportamentos. Auxilia na <strong>elaboração de perdas</strong> e traumas, reduzindo a influência de experiências passadas sobre o presente. Favorece o desenvolvimento de <strong>relacionamentos mais saudáveis</strong>, na medida em que o paciente passa a reconhecer padrões repetitivos e pode modificá-los conscientemente. Além disso, aumenta a <strong>capacidade de simbolização</strong>, ou seja, a habilidade de pensar sobre as próprias emoções em vez de apenas agi-las de forma impulsiva. O tratamento também contribui para uma maior <strong>autonomia emocional</strong>, pois o sujeito deixa de ser governado por forças inconscientes e passa a exercer maior protagonismo em sua vida.</p>
-
-      <p>É importante destacar que a psicoterapia psicanalítica não é um processo rápido nem superficial. Trata-se de um <strong>trabalho profundo e contínuo</strong>, que exige comprometimento, disponibilidade emocional e constância. No entanto, as transformações alcançadas tendem a ser <strong>duradouras e estruturais</strong>, pois ocorrem em um nível profundo da personalidade. Ao invés de oferecer soluções paliativas, a psicanálise busca promover mudanças reais na forma como o sujeito se relaciona consigo mesmo e com o mundo. Se você sente que padrões repetitivos, sintomas persistentes ou dificuldades emocionais estão limitando sua vida, a psicoterapia psicanalítica pode ser um caminho transformador rumo a uma existência mais autêntica e plena.</p>
-    `,
-  },
   {
     slug: 'como-lidar-com-ansiedade-no-trabalho',
     title: 'Como Lidar com a Ansiedade no Trabalho',

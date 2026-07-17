@@ -57,14 +57,7 @@ export const routes = [
     canonical: `${BASE_URL}/blog`,
     ogType: 'website',
   },
-  {
-    path: '/blog/o-que-e-psicoterapia-psicanalitica',
-    title: 'O que é Psicoterapia Psicanalítica | Juliana Munique',
-    description:
-      'Entenda o que é psicoterapia psicanalítica, sua origem freudiana e como o processo terapêutico funciona na prática.',
-    canonical: `${BASE_URL}/blog/o-que-e-psicoterapia-psicanalitica`,
-    ogType: 'article',
-  },
+
   {
     path: '/blog/como-lidar-com-ansiedade-no-trabalho',
     title: 'Ansiedade no Trabalho: Como Lidar | Juliana Munique',
