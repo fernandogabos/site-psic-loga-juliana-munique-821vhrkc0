@@ -12,8 +12,8 @@ export function Footer() {
               Juliana Munique
             </h3>
             <p className="text-primary-foreground text-sm leading-relaxed">
-              Psicoterapia psicanalítica para adolescentes e adultos. Um espaço seguro para
-              compreender sua história e construir novos caminhos com ética e acolhimento.
+              Psicanalista para adolescentes e adultos. Um espaço seguro para compreender sua
+              história e construir novos caminhos com ética e acolhimento.
             </p>
           </div>
 
