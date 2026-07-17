@@ -217,6 +217,37 @@ export default function Index() {
                 apenas "apagar o incêndio".
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem
+              value="item-4"
+              className="border-none bg-primary-foreground/10 rounded-2xl px-6 focus-within:ring-2 focus-within:ring-white"
+            >
+              <AccordionTrigger className="text-left font-serif font-bold text-xl hover:no-underline py-6 focus-visible:outline-none">
+                Quanto custa a psicoterapia?
+              </AccordionTrigger>
+              <AccordionContent className="text-primary-foreground text-base leading-relaxed pb-6">
+                O valor das sessões é combinado diretamente na conversa inicial, levando em conta a
+                frequência e a modalidade escolhida. Trabalho com valores que buscam tornar o
+                atendimento acessível sem comprometer a qualidade do processo. Entre em contato para
+                conversarmos sobre as possibilidades.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem
+              value="item-5"
+              className="border-none bg-primary-foreground/10 rounded-2xl px-6 focus-within:ring-2 focus-within:ring-white"
+            >
+              <AccordionTrigger className="text-left font-serif font-bold text-xl hover:no-underline py-6 focus-visible:outline-none">
+                Você atende online?
+              </AccordionTrigger>
+              <AccordionContent className="text-primary-foreground text-base leading-relaxed pb-6">
+                Sim, atendo online por videoconferência em plataforma segura e sigilosa. O
+                atendimento online tem a mesma qualidade e estrutura do presencial, e é uma
+                excelente opção para quem mora fora de Jundiaí ou prefere a praticidade do ambiente
+                doméstico. Sessões online podem ser combinadas com sessões presenciais conforme sua
+                necessidade.
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </section>

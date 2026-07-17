@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Quais são suas carências?',
     excerpt:
       'Entenda a origem da carência afetiva, como ela se manifesta nos seus relacionamentos e por que a psicoterapia é o caminho para a autonomia emocional.',
-    date: '10 de Junho, 2026',
+    date: '10 de junho de 2026',
     dateIso: '2026-06-10T08:00:00Z',
     category: 'Relacionamentos',
     imageUrl: carenciaImg,
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Bloqueios Emocionais? Como identificá-los?',
     excerpt:
       'Aprenda a reconhecer os bloqueios emocionais, defesas silenciosas do inconsciente que sabotam suas escolhas, e descubra como a terapia auxilia no desbloqueio.',
-    date: '22 de Maio, 2026',
+    date: '22 de maio de 2026',
     dateIso: '2026-05-22T08:00:00Z',
     category: 'Saúde Mental',
     imageUrl: bloqueiosEmocionaisImg,
@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Por que Educar é Difícil?',
     excerpt:
       'Reflexões sobre os desafios da parentalidade moderna, a repetição inconsciente de padrões herdados e os cinco pilares essenciais para o desenvolvimento infantil.',
-    date: '05 de Abril, 2026',
+    date: '05 de abril de 2026',
     dateIso: '2026-04-05T08:00:00Z',
     category: 'Parentalidade',
     imageUrl: educarImg,
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Função Materna e a Clínica',
     excerpt:
       'Compreenda como o psicólogo exerce uma função materna na clínica, acolhendo o paciente sem julgamento e oferecendo um espaço seguro para a transformação.',
-    date: '15 de Março, 2026',
+    date: '15 de março de 2026',
     dateIso: '2026-03-15T08:00:00Z',
     category: 'Psicanálise',
     imageUrl: maternidadeImg,
@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Fobia Social',
     excerpt:
       'Conheça os sintomas da fobia social, saiba diferenciar da timidez comum e entenda como a psicoterapia pode ajudar a superar o medo paralisante do julgamento.',
-    date: '28 de Fevereiro, 2026',
+    date: '28 de fevereiro de 2026',
     dateIso: '2026-02-28T08:00:00Z',
     category: 'Saúde Mental',
     imageUrl: fobiaSocialImg,
@@ -203,7 +203,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: 'O que é Psicoterapia Psicanalítica | Juliana Munique',
     excerpt:
       'Descubra o que é a psicoterapia psicanalítica, suas origens em Freud, como funciona o processo terapêutico e os benefícios de um tratamento que investiga o inconsciente.',
-    date: '10/03/2025',
+    date: '10 de março de 2025',
     dateIso: '2025-03-10T08:00:00Z',
     category: 'Psicanálise',
     imageUrl: 'https://img.usecurling.com/p/800/500?q=psychoanalysis%20therapy&color=blue',
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: 'Ansiedade no Trabalho: Como Lidar | Juliana Munique',
     excerpt:
       'Identifique as causas da ansiedade no ambiente profissional, reconheça os sintomas físicos e emocionais e descubra estratégias e tratamento para recuperar o equilíbrio.',
-    date: '25/03/2025',
+    date: '25 de março de 2025',
     dateIso: '2025-03-25T08:00:00Z',
     category: 'Saúde Mental',
     imageUrl: 'https://img.usecurling.com/p/800/500?q=anxiety%20work%20stress&color=green',
@@ -285,7 +285,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: 'Vínculo Terapêutico: Por que Importa | Juliana Munique',
     excerpt:
       'Entenda por que o vínculo terapêutico é essencial para o sucesso do tratamento psicológico, como ele se desenvolve e o papel da transferência na psicanálise.',
-    date: '08/04/2025',
+    date: '08 de abril de 2025',
     dateIso: '2025-04-08T08:00:00Z',
     category: 'Terapia',
     imageUrl: 'https://img.usecurling.com/p/800/500?q=therapy%20session%20bond&color=orange',
@@ -326,7 +326,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: 'Carência Afetiva: Raízes Emocionais | Juliana Munique',
     excerpt:
       'Compreenda as origens da carência afetiva na infância, como ela se manifesta nos relacionamentos adultos e como a psicanálise pode ajudar a superar a dependência emocional.',
-    date: '22/04/2025',
+    date: '22 de abril de 2025',
     dateIso: '2025-04-22T08:00:00Z',
     category: 'Relacionamentos',
     imageUrl: carenciaImg,
@@ -367,7 +367,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: 'Bloqueios Emocionais: Como Superar | Juliana Munique',
     excerpt:
       'Reconheça os sinais dos bloqueios emocionais, entenda como eles funcionam como mecanismos de defesa inconscientes e descubra como a terapia ajuda a superá-los.',
-    date: '05/05/2025',
+    date: '05 de maio de 2025',
     dateIso: '2025-05-05T08:00:00Z',
     category: 'Autoconhecimento',
     imageUrl: bloqueiosEmocionaisImg,
@@ -408,7 +408,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: 'Psicanálise e Educação Infantil | Juliana Munique',
     excerpt:
       'Descubra a importância da primeira infância para a estruturação psíquica, o impacto de traumas precoces e como a psicanálise pode orientar a parentalidade.',
-    date: '20/05/2025',
+    date: '20 de maio de 2025',
     dateIso: '2025-05-20T08:00:00Z',
     category: 'Família',
     imageUrl: educarImg,

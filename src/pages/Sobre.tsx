@@ -95,6 +95,47 @@ export default function Sobre() {
                 <li>Membro de grupos de estudos em Psicanálise Contemporânea</li>
               </ul>
             </div>
+
+            <h3 className="text-2xl font-serif font-bold text-primary mt-12 mb-4">
+              Minha Formação e Trajetória
+            </h3>
+            <p>
+              Sou graduada em Psicologia e me especializei em Psicanálise pela Sociedade Brasileira
+              de Psicanálise de Campinas (SBPCamp), instituição filiada à International
+              Psychoanalytical Association (IPA). Meu registro profissional é CRP 06/106345. Desde
+              2011, acompanho adultos e adolescentes em processos de análise que buscam compreender
+              o sofrimento emocional em sua dimensão mais profunda — aquela que não aparece em
+              exames, mas que determina nossas escolhas, nossas relações e nossa qualidade de vida.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold text-primary mt-12 mb-4">
+              Minha Abordagem
+            </h3>
+            <p>
+              Acredito que cada pessoa traz uma história única, e que o sofrimento nunca é genérico.
+              Na minha prática clínica, trabalho com escuta atenta, sem pressa e sem julgamentos. A
+              psicanálise não oferece fórmulas prontas — ela abre espaço para que você descubra, no
+              seu próprio tempo, o que está na raiz do que te incomoda. Atendo presencialmente no
+              meu consultório na Vila Arens, em Jundiaí, e também online para quem prefere a
+              comodidade do atendimento à distância.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold text-primary mt-12 mb-4">
+              Por que buscar análise?
+            </h3>
+            <p>
+              Muitas pessoas chegam à análise quando já estão exaustas de tentar resolver sozinhas
+              algo que não conseguem entender. Outras chegam movidas pela curiosidade de se conhecer
+              melhor. Não há momento certo para começar — há apenas o momento em que você decide que
+              quer algo diferente para a sua vida. Se você sente que algo está te impedindo de ser
+              quem você quer ser, esse é um bom motivo para uma primeira conversa.
+            </p>
+
+            <blockquote className="border-l-4 border-accent pl-6 italic text-lg text-muted-foreground mt-12">
+              Sou membro ativa da SBPCamp e participo regularmente de grupos de supervisão clínica e
+              seminários de formação continuada, garantindo que minha prática esteja sempre alinhada
+              aos mais altos padrões da psicanálise contemporânea.
+            </blockquote>
           </div>
         </div>
       </div>
