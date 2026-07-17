@@ -35,7 +35,7 @@ export default function Adultos() {
 
       <div className="container mx-auto px-4 md:px-6 py-16 max-w-4xl">
         <img
-          src="/visual-edits/juliana-munique-psicanalista-jundiai-adulto-30ea048f.png"
+          src="/visual-edits/juliana-munique-psicanalista-jundiai-adulto-10e31b7f.png"
           alt="Pessoa adulta em momento de reflexão profunda"
           className="w-full h-80 md:h-[400px] object-cover rounded-3xl shadow-lg mb-16"
         />
