@@ -32,7 +32,7 @@ export default function Adolescentes() {
 
       <div className="container mx-auto px-4 md:px-6 py-16 max-w-4xl">
         <img
-          src="https://img.usecurling.com/p/1200/500?q=teenager%20studying&color=brown"
+          src="/visual-edits/juliana-munique-psicanalista-jundiai-adolecente-0a1673d6.png"
           alt="Adolescente estudando em ambiente tranquilo"
           className="w-full h-80 md:h-[400px] object-cover rounded-3xl shadow-lg mb-16"
         />
