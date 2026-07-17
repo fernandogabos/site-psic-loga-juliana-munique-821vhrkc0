@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
+import { BlogReferences } from '@/components/BlogReferences'
 import { SEO, BASE_URL } from '@/components/SEO'
 import { blogPosts, AUTHOR_PORTRAIT_URL, getReadingTime } from '@/lib/blog-data'
 import { BlogPostSchema } from '@/lib/seo-schemas'
@@ -97,6 +98,8 @@ export default function BlogPost() {
           className="prose prose-lg max-w-none text-foreground"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        <BlogReferences slug={post.slug} />
 
         {post.faqs && post.faqs.length > 0 && (
           <div className="mt-16 pt-12 border-t border-border">
